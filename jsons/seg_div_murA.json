@@ -1,0 +1,275 @@
+[
+    {
+        "jornada": 1,
+        "equipo_local": "Tiki Taka",
+        "equipo_visitante": "El Palmar City",
+        "goles_local": 4,
+        "goles_visitante": 9
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Reventaos Fc",
+        "equipo_visitante": "Billie'S Ballers",
+        "goles_local": 4,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "La Élite Fc",
+        "equipo_visitante": "Samba Fc",
+        "goles_local": 6,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Perikles",
+        "equipo_visitante": "Payicos Fc",
+        "goles_local": 4,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Nakamas Fc",
+        "equipo_visitante": "Cvstodia Fc",
+        "goles_local": 8,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Samba Fc",
+        "equipo_visitante": "Perikles",
+        "goles_local": 6,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Cvstodia Fc",
+        "equipo_visitante": "La Élite Fc",
+        "goles_local": 4,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Payicos Fc",
+        "equipo_visitante": "Reventaos Fc",
+        "goles_local": 4,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Billie'S Ballers",
+        "equipo_visitante": "Tiki Taka",
+        "goles_local": 7,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "El Palmar City",
+        "equipo_visitante": "Nakamas Fc",
+        "goles_local": 7,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Reventaos Fc",
+        "equipo_visitante": "Samba Fc",
+        "goles_local": 4,
+        "goles_visitante": 7
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Nakamas Fc",
+        "equipo_visitante": "La Élite Fc",
+        "goles_local": 5,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Perikles",
+        "equipo_visitante": "Cvstodia Fc",
+        "goles_local": 3,
+        "goles_visitante": 7
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "El Palmar City",
+        "equipo_visitante": "Billie'S Ballers",
+        "goles_local": 7,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Tiki Taka",
+        "equipo_visitante": "Payicos Fc",
+        "goles_local": 0,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Billie'S Ballers",
+        "equipo_visitante": "Nakamas Fc",
+        "goles_local": 3,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Samba Fc",
+        "equipo_visitante": "Tiki Taka",
+        "goles_local": 3,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Payicos Fc",
+        "equipo_visitante": "El Palmar City",
+        "goles_local": 1,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Cvstodia Fc",
+        "equipo_visitante": "Reventaos Fc",
+        "goles_local": 1,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "La Élite Fc",
+        "equipo_visitante": "Perikles",
+        "goles_local": 0,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Tiki Taka",
+        "equipo_visitante": "Cvstodia Fc",
+        "goles_local": 6,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "El Palmar City",
+        "equipo_visitante": "Samba Fc",
+        "goles_local": 8,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Nakamas Fc",
+        "equipo_visitante": "Perikles",
+        "goles_local": 8,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Billie'S Ballers",
+        "equipo_visitante": "Payicos Fc",
+        "goles_local": 7,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Reventaos Fc",
+        "equipo_visitante": "La Élite Fc",
+        "goles_local": 3,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Payicos Fc",
+        "equipo_visitante": "Samba Fc",
+        "goles_local": 3,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Nakamas Fc",
+        "equipo_visitante": "Reventaos Fc",
+        "goles_local": 6,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Tiki Taka",
+        "equipo_visitante": "Perikles",
+        "goles_local": 4,
+        "goles_visitante": 9
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "El Palmar City",
+        "equipo_visitante": "La Élite Fc",
+        "goles_local": 3,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Nakamas Fc",
+        "equipo_visitante": "Samba Fc",
+        "goles_local": 3,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "La Élite Fc",
+        "equipo_visitante": "Billie'S Ballers",
+        "goles_local": 0,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Perikles",
+        "equipo_visitante": "El Palmar City",
+        "goles_local": 5,
+        "goles_visitante": 8
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Reventaos Fc",
+        "equipo_visitante": "Tiki Taka",
+        "goles_local": 0,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Cvstodia Fc",
+        "equipo_visitante": "Payicos Fc",
+        "goles_local": 2,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Samba Fc",
+        "equipo_visitante": "Cvstodia Fc",
+        "goles_local": 3,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Payicos Fc",
+        "equipo_visitante": "La Élite Fc",
+        "goles_local": 0,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "El Palmar City",
+        "equipo_visitante": "Reventaos Fc",
+        "goles_local": 3,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Tiki Taka",
+        "equipo_visitante": "Nakamas Fc",
+        "goles_local": 3,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Billie'S Ballers",
+        "equipo_visitante": "Perikles",
+        "goles_local": 5,
+        "goles_visitante": 2
+    }
+]

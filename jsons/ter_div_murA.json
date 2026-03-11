@@ -1,0 +1,282 @@
+[
+    {
+        "jornada": 1,
+        "equipo_local": "Perumur Fc",
+        "equipo_visitante": "Recreativo Murcia Fc",
+        "goles_local": 3,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Titanes Fc",
+        "equipo_visitante": "La Tubería De Oro",
+        "goles_local": 3,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Pulso Cf",
+        "equipo_visitante": "Recreativo De Juerga",
+        "goles_local": 15,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Mambas Fc",
+        "equipo_visitante": "Ribereño Fc",
+        "goles_local": 4,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "30835 Fc",
+        "equipo_visitante": "Lc Return",
+        "goles_local": 10,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Recreativo De Juerga",
+        "equipo_visitante": "Perumur Fc",
+        "goles_local": 3,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Recreativo Murcia Fc",
+        "equipo_visitante": "30835 Fc",
+        "goles_local": 1,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Lc Return",
+        "equipo_visitante": "Titanes Fc",
+        "goles_local": 3,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Ribereño Fc",
+        "equipo_visitante": "Pulso Cf",
+        "goles_local": 1,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "La Tubería De Oro",
+        "equipo_visitante": "Mambas Fc",
+        "goles_local": 0,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Titanes Fc",
+        "equipo_visitante": "Mambas Fc",
+        "goles_local": 1,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "30835 Fc",
+        "equipo_visitante": "Recreativo De Juerga",
+        "goles_local": 14,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Perumur Fc",
+        "equipo_visitante": "Ribereño Fc",
+        "goles_local": 5,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Pulso Cf",
+        "equipo_visitante": "La Tubería De Oro",
+        "goles_local": 3,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Lc Return",
+        "equipo_visitante": "Recreativo Murcia Fc",
+        "goles_local": 6,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "La Tubería De Oro",
+        "equipo_visitante": "Perumur Fc",
+        "goles_local": 7,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Recreativo De Juerga",
+        "equipo_visitante": "Lc Return",
+        "goles_local": 2,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Mambas Fc",
+        "equipo_visitante": "Pulso Cf",
+        "goles_local": 2,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Ribereño Fc",
+        "equipo_visitante": "30835 Fc",
+        "goles_local": 5,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Recreativo Murcia Fc",
+        "equipo_visitante": "Titanes Fc",
+        "goles_local": 3,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Titanes Fc",
+        "equipo_visitante": "Pulso Cf",
+        "goles_local": 2,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Lc Return",
+        "equipo_visitante": "Ribereño Fc",
+        "goles_local": 4,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Recreativo Murcia Fc",
+        "equipo_visitante": "Recreativo De Juerga",
+        "goles_local": 5,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "30835 Fc",
+        "equipo_visitante": "La Tubería De Oro",
+        "goles_local": 4,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Perumur Fc",
+        "equipo_visitante": "Mambas Fc",
+        "goles_local": 1,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "30835 Fc",
+        "equipo_visitante": "Pulso Cf",
+        "goles_local": 6,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Lc Return",
+        "equipo_visitante": "Mambas Fc",
+        "goles_local": 6,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Titanes Fc",
+        "equipo_visitante": "Perumur Fc",
+        "goles_local": 1,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Recreativo Murcia Fc",
+        "equipo_visitante": "La Tubería De Oro",
+        "goles_local": 3,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Recreativo De Juerga",
+        "equipo_visitante": "Ribereño Fc",
+        "goles_local": 2,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Perumur Fc",
+        "equipo_visitante": "30835 Fc",
+        "goles_local": 6,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Pulso Cf",
+        "equipo_visitante": "Lc Return",
+        "goles_local": 5,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Mambas Fc",
+        "equipo_visitante": "Recreativo Murcia Fc",
+        "goles_local": 3,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Titanes Fc",
+        "equipo_visitante": "Ribereño Fc",
+        "goles_local": 1,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "La Tubería De Oro",
+        "equipo_visitante": "Recreativo De Juerga",
+        "goles_local": 9,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Ribereño Fc",
+        "equipo_visitante": "La Tubería De Oro",
+        "goles_local": 6,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Lc Return",
+        "equipo_visitante": "Perumur Fc",
+        "goles_local": 3,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Recreativo Murcia Fc",
+        "equipo_visitante": "Pulso Cf",
+        "goles_local": 0,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Recreativo De Juerga",
+        "equipo_visitante": "Mambas Fc",
+        "goles_local": 2,
+        "goles_visitante": 8
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "30835 Fc",
+        "equipo_visitante": "Titanes Fc",
+        "goles_local": 6,
+        "goles_visitante": 4
+    }
+]

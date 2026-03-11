@@ -1,0 +1,632 @@
+[
+    {
+        "jornada": 1,
+        "equipo_local": "Inter Aljucer Fc",
+        "equipo_visitante": "Trufa Team",
+        "goles_local": 6,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "San Miguel",
+        "equipo_visitante": "Inter De Molina",
+        "goles_local": 4,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "La Magia Ad",
+        "equipo_visitante": "Atlético Luisenburgo",
+        "goles_local": 8,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Chanetis Fc",
+        "equipo_visitante": "Atlético Barqueros",
+        "goles_local": 2,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Gravesinha Fc",
+        "equipo_visitante": "Guerreros Fc",
+        "goles_local": 1,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Atlético Luisenburgo",
+        "equipo_visitante": "San Miguel",
+        "goles_local": 5,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Inter De Molina",
+        "equipo_visitante": "Chanetis Fc",
+        "goles_local": 2,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Guerreros Fc",
+        "equipo_visitante": "Inter Aljucer Fc",
+        "goles_local": 2,
+        "goles_visitante": 8
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Atlético Barqueros",
+        "equipo_visitante": "Gravesinha Fc",
+        "goles_local": 0,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Trufa Team",
+        "equipo_visitante": "La Magia Ad",
+        "goles_local": 3,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Atlético Luisenburgo",
+        "equipo_visitante": "Trufa Team",
+        "goles_local": 6,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Gravesinha Fc",
+        "equipo_visitante": "Inter De Molina",
+        "goles_local": 2,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Inter Aljucer Fc",
+        "equipo_visitante": "Atlético Barqueros",
+        "goles_local": 3,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "La Magia Ad",
+        "equipo_visitante": "Guerreros Fc",
+        "goles_local": 5,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "San Miguel",
+        "equipo_visitante": "Chanetis Fc",
+        "goles_local": 2,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Inter De Molina",
+        "equipo_visitante": "Inter Aljucer Fc",
+        "goles_local": 1,
+        "goles_visitante": 7
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Trufa Team",
+        "equipo_visitante": "San Miguel",
+        "goles_local": 3,
+        "goles_visitante": 10
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Guerreros Fc",
+        "equipo_visitante": "Atlético Luisenburgo",
+        "goles_local": 5,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Atlético Barqueros",
+        "equipo_visitante": "La Magia Ad",
+        "goles_local": 3,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Chanetis Fc",
+        "equipo_visitante": "Gravesinha Fc",
+        "goles_local": 3,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "La Magia Ad",
+        "equipo_visitante": "Inter De Molina",
+        "goles_local": 2,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Atlético Luisenburgo",
+        "equipo_visitante": "Atlético Barqueros",
+        "goles_local": 9,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Trufa Team",
+        "equipo_visitante": "Guerreros Fc",
+        "goles_local": 6,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Inter Aljucer Fc",
+        "equipo_visitante": "Chanetis Fc",
+        "goles_local": 1,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "San Miguel",
+        "equipo_visitante": "Gravesinha Fc",
+        "goles_local": 2,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Guerreros Fc",
+        "equipo_visitante": "San Miguel",
+        "goles_local": 7,
+        "goles_visitante": 7
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Atlético Barqueros",
+        "equipo_visitante": "Trufa Team",
+        "goles_local": 4,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Inter De Molina",
+        "equipo_visitante": "Atlético Luisenburgo",
+        "goles_local": 6,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Chanetis Fc",
+        "equipo_visitante": "La Magia Ad",
+        "goles_local": 6,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Gravesinha Fc",
+        "equipo_visitante": "Inter Aljucer Fc",
+        "goles_local": 3,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Guerreros Fc",
+        "equipo_visitante": "Atlético Barqueros",
+        "goles_local": 4,
+        "goles_visitante": 7
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Trufa Team",
+        "equipo_visitante": "Inter De Molina",
+        "goles_local": 4,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Atlético Luisenburgo",
+        "equipo_visitante": "Chanetis Fc",
+        "goles_local": 4,
+        "goles_visitante": 7
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "La Magia Ad",
+        "equipo_visitante": "Gravesinha Fc",
+        "goles_local": 2,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "San Miguel",
+        "equipo_visitante": "Inter Aljucer Fc",
+        "goles_local": 7,
+        "goles_visitante": 9
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Inter De Molina",
+        "equipo_visitante": "Guerreros Fc",
+        "goles_local": 1,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "San Miguel",
+        "equipo_visitante": "Atlético Barqueros",
+        "goles_local": 3,
+        "goles_visitante": 7
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Chanetis Fc",
+        "equipo_visitante": "Trufa Team",
+        "goles_local": 3,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Gravesinha Fc",
+        "equipo_visitante": "Atlético Luisenburgo",
+        "goles_local": 4,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Inter Aljucer Fc",
+        "equipo_visitante": "La Magia Ad",
+        "goles_local": 5,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Guerreros Fc",
+        "equipo_visitante": "Chanetis Fc",
+        "goles_local": 2,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Atlético Barqueros",
+        "equipo_visitante": "Inter De Molina",
+        "goles_local": 3,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Trufa Team",
+        "equipo_visitante": "Gravesinha Fc",
+        "goles_local": 3,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Atlético Luisenburgo",
+        "equipo_visitante": "Inter Aljucer Fc",
+        "goles_local": 0,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "La Magia Ad",
+        "equipo_visitante": "San Miguel",
+        "goles_local": 7,
+        "goles_visitante": 11
+    },
+    {
+        "jornada": 10,
+        "equipo_local": "Atlético Luisenburgo",
+        "equipo_visitante": "La Magia Ad",
+        "goles_local": 1,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 10,
+        "equipo_local": "Atlético Barqueros",
+        "equipo_visitante": "Chanetis Fc",
+        "goles_local": 1,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 10,
+        "equipo_local": "Inter De Molina",
+        "equipo_visitante": "San Miguel",
+        "goles_local": 6,
+        "goles_visitante": 8
+    },
+    {
+        "jornada": 10,
+        "equipo_local": "Guerreros Fc",
+        "equipo_visitante": "Gravesinha Fc",
+        "goles_local": 3,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 10,
+        "equipo_local": "Trufa Team",
+        "equipo_visitante": "Inter Aljucer Fc",
+        "goles_local": 5,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 11,
+        "equipo_local": "Chanetis Fc",
+        "equipo_visitante": "Inter De Molina",
+        "goles_local": 6,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 11,
+        "equipo_local": "Gravesinha Fc",
+        "equipo_visitante": "Atlético Barqueros",
+        "goles_local": 2,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 11,
+        "equipo_local": "Inter Aljucer Fc",
+        "equipo_visitante": "Guerreros Fc",
+        "goles_local": 6,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 11,
+        "equipo_local": "La Magia Ad",
+        "equipo_visitante": "Trufa Team",
+        "goles_local": 6,
+        "goles_visitante": 7
+    },
+    {
+        "jornada": 11,
+        "equipo_local": "San Miguel",
+        "equipo_visitante": "Atlético Luisenburgo",
+        "goles_local": 3,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 12,
+        "equipo_local": "Inter De Molina",
+        "equipo_visitante": "Gravesinha Fc",
+        "goles_local": 3,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 12,
+        "equipo_local": "Atlético Barqueros",
+        "equipo_visitante": "Inter Aljucer Fc",
+        "goles_local": 2,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 12,
+        "equipo_local": "Chanetis Fc",
+        "equipo_visitante": "San Miguel",
+        "goles_local": 4,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 12,
+        "equipo_local": "Trufa Team",
+        "equipo_visitante": "Atlético Luisenburgo",
+        "goles_local": 5,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 12,
+        "equipo_local": "Guerreros Fc",
+        "equipo_visitante": "La Magia Ad",
+        "goles_local": 3,
+        "goles_visitante": 8
+    },
+    {
+        "jornada": 13,
+        "equipo_local": "San Miguel",
+        "equipo_visitante": "Trufa Team",
+        "goles_local": 6,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 13,
+        "equipo_local": "La Magia Ad",
+        "equipo_visitante": "Atlético Barqueros",
+        "goles_local": 3,
+        "goles_visitante": 8
+    },
+    {
+        "jornada": 13,
+        "equipo_local": "Inter Aljucer Fc",
+        "equipo_visitante": "Inter De Molina",
+        "goles_local": 1,
+        "goles_visitante": 7
+    },
+    {
+        "jornada": 13,
+        "equipo_local": "Atlético Luisenburgo",
+        "equipo_visitante": "Guerreros Fc",
+        "goles_local": 6,
+        "goles_visitante": 12
+    },
+    {
+        "jornada": 13,
+        "equipo_local": "Gravesinha Fc",
+        "equipo_visitante": "Chanetis Fc",
+        "goles_local": 1,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 14,
+        "equipo_local": "Guerreros Fc",
+        "equipo_visitante": "Trufa Team",
+        "goles_local": 5,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 14,
+        "equipo_local": "Atlético Barqueros",
+        "equipo_visitante": "Atlético Luisenburgo",
+        "goles_local": 5,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 14,
+        "equipo_local": "Inter De Molina",
+        "equipo_visitante": "La Magia Ad",
+        "goles_local": 0,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 14,
+        "equipo_local": "Chanetis Fc",
+        "equipo_visitante": "Inter Aljucer Fc",
+        "goles_local": 5,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 14,
+        "equipo_local": "Gravesinha Fc",
+        "equipo_visitante": "San Miguel",
+        "goles_local": 2,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 15,
+        "equipo_local": "San Miguel",
+        "equipo_visitante": "Guerreros Fc",
+        "goles_local": 8,
+        "goles_visitante": 9
+    },
+    {
+        "jornada": 15,
+        "equipo_local": "Atlético Luisenburgo",
+        "equipo_visitante": "Inter De Molina",
+        "goles_local": 3,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 15,
+        "equipo_local": "Trufa Team",
+        "equipo_visitante": "Atlético Barqueros",
+        "goles_local": 2,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 15,
+        "equipo_local": "La Magia Ad",
+        "equipo_visitante": "Chanetis Fc",
+        "goles_local": 2,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 15,
+        "equipo_local": "Inter Aljucer Fc",
+        "equipo_visitante": "Gravesinha Fc",
+        "goles_local": 5,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 16,
+        "equipo_local": "Inter De Molina",
+        "equipo_visitante": "Trufa Team",
+        "goles_local": 4,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 16,
+        "equipo_local": "Atlético Barqueros",
+        "equipo_visitante": "Guerreros Fc",
+        "goles_local": 5,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 16,
+        "equipo_local": "Chanetis Fc",
+        "equipo_visitante": "Atlético Luisenburgo",
+        "goles_local": 9,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 16,
+        "equipo_local": "Gravesinha Fc",
+        "equipo_visitante": "La Magia Ad",
+        "goles_local": 4,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 16,
+        "equipo_local": "Inter Aljucer Fc",
+        "equipo_visitante": "San Miguel",
+        "goles_local": 0,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 17,
+        "equipo_local": "Guerreros Fc",
+        "equipo_visitante": "Inter De Molina",
+        "goles_local": 6,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 17,
+        "equipo_local": "Atlético Luisenburgo",
+        "equipo_visitante": "Gravesinha Fc",
+        "goles_local": 1,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 17,
+        "equipo_local": "Atlético Barqueros",
+        "equipo_visitante": "San Miguel",
+        "goles_local": 3,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 17,
+        "equipo_local": "La Magia Ad",
+        "equipo_visitante": "Inter Aljucer Fc",
+        "goles_local": 4,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 17,
+        "equipo_local": "Trufa Team",
+        "equipo_visitante": "Chanetis Fc",
+        "goles_local": 2,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 18,
+        "equipo_local": "Inter Aljucer Fc",
+        "equipo_visitante": "Atlético Luisenburgo",
+        "goles_local": 3,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 18,
+        "equipo_local": "Inter De Molina",
+        "equipo_visitante": "Atlético Barqueros",
+        "goles_local": 3,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 18,
+        "equipo_local": "Gravesinha Fc",
+        "equipo_visitante": "Trufa Team",
+        "goles_local": 2,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 18,
+        "equipo_local": "San Miguel",
+        "equipo_visitante": "La Magia Ad",
+        "goles_local": 5,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 18,
+        "equipo_local": "Chanetis Fc",
+        "equipo_visitante": "Guerreros Fc",
+        "goles_local": 6,
+        "goles_visitante": 4
+    }
+]

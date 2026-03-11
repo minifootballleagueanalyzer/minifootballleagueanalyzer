@@ -1,0 +1,317 @@
+[
+    {
+        "jornada": 1,
+        "equipo_local": "Blackout Fc",
+        "equipo_visitante": "Federicos Team",
+        "goles_local": 4,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Patriot",
+        "equipo_visitante": "Distrito Internazionale  Fc",
+        "goles_local": 6,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Fc La Yanka",
+        "equipo_visitante": "Raal Murcia",
+        "goles_local": 6,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Sabomur Stars",
+        "equipo_visitante": "Llamas Barber Studio",
+        "goles_local": 4,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Los Trakas",
+        "equipo_visitante": "Niupi",
+        "goles_local": 3,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Distrito Internazionale  Fc",
+        "equipo_visitante": "Blackout Fc",
+        "goles_local": 5,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Llamas Barber Studio",
+        "equipo_visitante": "Fc La Yanka",
+        "goles_local": 1,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Niupi",
+        "equipo_visitante": "Patriot",
+        "goles_local": 3,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Raal Murcia",
+        "equipo_visitante": "Los Trakas",
+        "goles_local": 4,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Federicos Team",
+        "equipo_visitante": "Sabomur Stars",
+        "goles_local": 1,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Los Trakas",
+        "equipo_visitante": "Llamas Barber Studio",
+        "goles_local": 4,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Sabomur Stars",
+        "equipo_visitante": "Fc La Yanka",
+        "goles_local": 5,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Federicos Team",
+        "equipo_visitante": "Distrito Internazionale  Fc",
+        "goles_local": 3,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Patriot",
+        "equipo_visitante": "Raal Murcia",
+        "goles_local": 0,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Blackout Fc",
+        "equipo_visitante": "Niupi",
+        "goles_local": 3,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Distrito Internazionale  Fc",
+        "equipo_visitante": "Sabomur Stars",
+        "goles_local": 2,
+        "goles_visitante": 8
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Fc La Yanka",
+        "equipo_visitante": "Los Trakas",
+        "goles_local": 2,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Niupi",
+        "equipo_visitante": "Federicos Team",
+        "goles_local": 5,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Llamas Barber Studio",
+        "equipo_visitante": "Patriot",
+        "goles_local": 4,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Raal Murcia",
+        "equipo_visitante": "Blackout Fc",
+        "goles_local": 3,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Distrito Internazionale  Fc",
+        "equipo_visitante": "Niupi",
+        "goles_local": 5,
+        "goles_visitante": 8
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Federicos Team",
+        "equipo_visitante": "Raal Murcia",
+        "goles_local": 5,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Blackout Fc",
+        "equipo_visitante": "Llamas Barber Studio",
+        "goles_local": 2,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Patriot",
+        "equipo_visitante": "Fc La Yanka",
+        "goles_local": 1,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Sabomur Stars",
+        "equipo_visitante": "Los Trakas",
+        "goles_local": 7,
+        "goles_visitante": 7
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Fc La Yanka",
+        "equipo_visitante": "Blackout Fc",
+        "goles_local": 6,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Los Trakas",
+        "equipo_visitante": "Patriot",
+        "goles_local": 4,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Raal Murcia",
+        "equipo_visitante": "Distrito Internazionale  Fc",
+        "goles_local": 11,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Llamas Barber Studio",
+        "equipo_visitante": "Federicos Team",
+        "goles_local": 6,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Niupi",
+        "equipo_visitante": "Sabomur Stars",
+        "goles_local": 5,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Distrito Internazionale  Fc",
+        "equipo_visitante": "Llamas Barber Studio",
+        "goles_local": 2,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Blackout Fc",
+        "equipo_visitante": "Los Trakas",
+        "goles_local": 4,
+        "goles_visitante": 7
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Federicos Team",
+        "equipo_visitante": "Fc La Yanka",
+        "goles_local": 0,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Sabomur Stars",
+        "equipo_visitante": "Patriot",
+        "goles_local": 3,
+        "goles_visitante": 8
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Niupi",
+        "equipo_visitante": "Raal Murcia",
+        "goles_local": 2,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Llamas Barber Studio",
+        "equipo_visitante": "Niupi",
+        "goles_local": 3,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Fc La Yanka",
+        "equipo_visitante": "Distrito Internazionale  Fc",
+        "goles_local": 3,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Sabomur Stars",
+        "equipo_visitante": "Raal Murcia",
+        "goles_local": 6,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Los Trakas",
+        "equipo_visitante": "Federicos Team",
+        "goles_local": 5,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Patriot",
+        "equipo_visitante": "Blackout Fc",
+        "goles_local": 3,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Niupi",
+        "equipo_visitante": "Fc La Yanka",
+        "goles_local": 3,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Distrito Internazionale  Fc",
+        "equipo_visitante": "Los Trakas",
+        "goles_local": 3,
+        "goles_visitante": 12
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Blackout Fc",
+        "equipo_visitante": "Sabomur Stars",
+        "goles_local": 1,
+        "goles_visitante": 10
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Federicos Team",
+        "equipo_visitante": "Patriot",
+        "goles_local": 1,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Raal Murcia",
+        "equipo_visitante": "Llamas Barber Studio",
+        "goles_local": 3,
+        "goles_visitante": 2
+    }
+]

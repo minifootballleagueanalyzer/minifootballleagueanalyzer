@@ -1,0 +1,218 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.filters-section {
+  background-color: var(--bg-header);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.section-title::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 20px;
+  background-color: var(--accent-color);
+  margin-right: 12px;
+  border-radius: 4px;
+}
+
+/* Custom Select Styles */
+.custom-select-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+  width: 100%;
+}
+
+.select-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.custom-select-box {
+  background-color: #252525;
+  border: 1px solid var(--border-color);
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.custom-select-box:hover {
+  border-color: #555;
+  background-color: #2a2a2a;
+}
+
+.chevron-icon {
+  color: var(--text-secondary);
+}
+
+.select-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  width: 100%;
+  background-color: #252525;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 50;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+/* Custom Scrollbar for dropdown */
+.select-dropdown::-webkit-scrollbar {
+  width: 8px;
+}
+.select-dropdown::-webkit-scrollbar-track {
+  background: var(--bg-header);
+}
+.select-dropdown::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+.select-dropdown::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.select-option {
+  padding: 1rem 1.25rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.select-option:hover {
+  background-color: rgba(0, 210, 106, 0.1);
+  color: var(--accent-color);
+}
+
+.select-option.selected {
+  background-color: rgba(0, 210, 106, 0.15);
+  color: var(--accent-color);
+  font-weight: 600;
+  border-left: 3px solid var(--accent-color);
+}
+
+/* Select Flag Styling */
+.select-value-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.select-flag {
+  width: 24px;
+  height: 16px;
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Teams Selector */
+.teams-selector-wrapper {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.subsection-title {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.teams-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.vs-badge {
+  background-color: #333;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.85rem;
+  margin-top: 1.3rem; /* Aligns with input boxes */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--bg-header);
+  z-index: 10;
+}
+
+.analysis-dashboard {
+  background-color: var(--bg-header);
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+.placeholder-chart {
+  color: var(--text-secondary);
+  font-style: italic;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px dashed #444;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .teams-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .vs-badge {
+    margin: 0.5rem auto;
+  }
+}

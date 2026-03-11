@@ -1,0 +1,314 @@
+{
+    "prim_div_mur": [
+        {
+            "posicion": 1,
+            "equipo": "Chanetis Fc",
+            "puntos": 1752
+        },
+        {
+            "posicion": 2,
+            "equipo": "Atlético Barqueros",
+            "puntos": 1659
+        },
+        {
+            "posicion": 3,
+            "equipo": "San Miguel",
+            "puntos": 1578
+        },
+        {
+            "posicion": 4,
+            "equipo": "Trufa Team",
+            "puntos": 1533
+        },
+        {
+            "posicion": 5,
+            "equipo": "Gravesinha Fc",
+            "puntos": 1482
+        },
+        {
+            "posicion": 6,
+            "equipo": "Guerreros Fc",
+            "puntos": 1477
+        },
+        {
+            "posicion": 7,
+            "equipo": "Inter Aljucer Fc",
+            "puntos": 1476
+        },
+        {
+            "posicion": 8,
+            "equipo": "La Magia Ad",
+            "puntos": 1417
+        },
+        {
+            "posicion": 9,
+            "equipo": "Inter De Molina",
+            "puntos": 1405
+        },
+        {
+            "posicion": 10,
+            "equipo": "Atlético Luisenburgo",
+            "puntos": 1220
+        }
+    ],
+    "seg_div_murB": [
+        {
+            "posicion": 1,
+            "equipo": "Niupi",
+            "puntos": 1592
+        },
+        {
+            "posicion": 2,
+            "equipo": "Fc La Yanka",
+            "puntos": 1573
+        },
+        {
+            "posicion": 3,
+            "equipo": "Los Trakas",
+            "puntos": 1568
+        },
+        {
+            "posicion": 4,
+            "equipo": "Patriot",
+            "puntos": 1558
+        },
+        {
+            "posicion": 5,
+            "equipo": "Sabomur Stars",
+            "puntos": 1553
+        },
+        {
+            "posicion": 6,
+            "equipo": "Raal Murcia",
+            "puntos": 1524
+        },
+        {
+            "posicion": 7,
+            "equipo": "Llamas Barber Studio",
+            "puntos": 1486
+        },
+        {
+            "posicion": 8,
+            "equipo": "Blackout Fc",
+            "puntos": 1398
+        },
+        {
+            "posicion": 9,
+            "equipo": "Federicos Team",
+            "puntos": 1382
+        },
+        {
+            "posicion": 10,
+            "equipo": "Distrito Internazionale  Fc",
+            "puntos": 1365
+        }
+    ],
+    "ter_div_murA": [
+        {
+            "posicion": 1,
+            "equipo": "30835 Fc",
+            "puntos": 1625
+        },
+        {
+            "posicion": 2,
+            "equipo": "Mambas Fc",
+            "puntos": 1578
+        },
+        {
+            "posicion": 3,
+            "equipo": "Pulso Cf",
+            "puntos": 1571
+        },
+        {
+            "posicion": 4,
+            "equipo": "Ribereño Fc",
+            "puntos": 1527
+        },
+        {
+            "posicion": 5,
+            "equipo": "Perumur Fc",
+            "puntos": 1520
+        },
+        {
+            "posicion": 6,
+            "equipo": "La Tubería De Oro",
+            "puntos": 1518
+        },
+        {
+            "posicion": 7,
+            "equipo": "Lc Return",
+            "puntos": 1498
+        },
+        {
+            "posicion": 8,
+            "equipo": "Titanes Fc",
+            "puntos": 1416
+        },
+        {
+            "posicion": 9,
+            "equipo": "Recreativo Murcia Fc",
+            "puntos": 1396
+        },
+        {
+            "posicion": 10,
+            "equipo": "Recreativo De Juerga",
+            "puntos": 1350
+        }
+    ],
+    "seg_div_murA": [
+        {
+            "posicion": 1,
+            "equipo": "El Palmar City",
+            "puntos": 1654
+        },
+        {
+            "posicion": 2,
+            "equipo": "Billie'S Ballers",
+            "puntos": 1576
+        },
+        {
+            "posicion": 3,
+            "equipo": "Nakamas Fc",
+            "puntos": 1554
+        },
+        {
+            "posicion": 4,
+            "equipo": "Tiki Taka",
+            "puntos": 1514
+        },
+        {
+            "posicion": 5,
+            "equipo": "Payicos Fc",
+            "puntos": 1490
+        },
+        {
+            "posicion": 6,
+            "equipo": "La Élite Fc",
+            "puntos": 1478
+        },
+        {
+            "posicion": 7,
+            "equipo": "Samba Fc",
+            "puntos": 1475
+        },
+        {
+            "posicion": 8,
+            "equipo": "Perikles",
+            "puntos": 1462
+        },
+        {
+            "posicion": 9,
+            "equipo": "Cvstodia Fc",
+            "puntos": 1411
+        },
+        {
+            "posicion": 10,
+            "equipo": "Reventaos Fc",
+            "puntos": 1387
+        }
+    ],
+    "ter_div_murB": [
+        {
+            "posicion": 1,
+            "equipo": "Afed Fc",
+            "puntos": 1597
+        },
+        {
+            "posicion": 2,
+            "equipo": "C.D Tocapelotas",
+            "puntos": 1575
+        },
+        {
+            "posicion": 3,
+            "equipo": "Los Gallos Fc",
+            "puntos": 1571
+        },
+        {
+            "posicion": 4,
+            "equipo": "Ud Las Piscinas",
+            "puntos": 1536
+        },
+        {
+            "posicion": 5,
+            "equipo": "Riomar Fc",
+            "puntos": 1515
+        },
+        {
+            "posicion": 6,
+            "equipo": "Blackrock Fc",
+            "puntos": 1495
+        },
+        {
+            "posicion": 7,
+            "equipo": "Freemium",
+            "puntos": 1468
+        },
+        {
+            "posicion": 8,
+            "equipo": "Champagne Fc",
+            "puntos": 1437
+        },
+        {
+            "posicion": 9,
+            "equipo": "Levante La Birra",
+            "puntos": 1420
+        },
+        {
+            "posicion": 10,
+            "equipo": "Inazuma Cabezo Fc",
+            "puntos": 1385
+        }
+    ],
+    "cuar_div_mur": [
+        {
+            "posicion": 1,
+            "equipo": "Fc Esparragal",
+            "puntos": 1598
+        },
+        {
+            "posicion": 2,
+            "equipo": "Junta Fc",
+            "puntos": 1561
+        },
+        {
+            "posicion": 3,
+            "equipo": "Charca",
+            "puntos": 1556
+        },
+        {
+            "posicion": 4,
+            "equipo": "Ultimate City",
+            "puntos": 1545
+        },
+        {
+            "posicion": 5,
+            "equipo": "Real Suciedad",
+            "puntos": 1533
+        },
+        {
+            "posicion": 6,
+            "equipo": "Victory Road",
+            "puntos": 1532
+        },
+        {
+            "posicion": 7,
+            "equipo": "Nottingham Miedo",
+            "puntos": 1491
+        },
+        {
+            "posicion": 8,
+            "equipo": "Los Ramos",
+            "puntos": 1446
+        },
+        {
+            "posicion": 9,
+            "equipo": "Iluminaos Fc",
+            "puntos": 1373
+        },
+        {
+            "posicion": 10,
+            "equipo": "Hefame Fc",
+            "puntos": 1366
+        }
+    ]
+}

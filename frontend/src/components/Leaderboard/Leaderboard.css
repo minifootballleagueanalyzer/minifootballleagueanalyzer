@@ -1,0 +1,132 @@
+.leaderboard-container {
+  width: 100%;
+  max-width: 800px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.leaderboard-empty {
+  color: var(--text-secondary, #a1a1aa);
+  font-style: italic;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 3rem;
+  border-radius: 12px;
+  border: 1px dashed #444;
+  width: 100%;
+}
+
+.leaderboard-header {
+  display: grid;
+  grid-template-columns: 80px 1fr 60px;
+  padding: 0 1rem 1rem 1rem;
+  border-bottom: 1px solid #333;
+  color: #a1a1aa;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.header-col-rank {
+  text-align: center;
+}
+
+.header-col-team {
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.header-col-pts {
+  text-align: right;
+}
+
+.leaderboard-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.leaderboard-row {
+  display: grid;
+  grid-template-columns: 80px 1fr 60px;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #2a2a2a;
+  transition: background-color 0.2s;
+}
+
+.leaderboard-row:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.col-rank {
+  display: flex;
+  justify-content: center;
+}
+
+.rank-badge {
+  background-color: #222;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.1rem;
+  width: 45px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-family: monospace;
+}
+
+.rank-first {
+  color: #fbbf24; /* Gold */
+}
+
+.rank-second {
+  color: #e5e7eb; /* Silver */
+}
+
+.rank-third {
+  color: #b45309; /* Bronze */
+}
+
+.col-team {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 1rem;
+}
+
+.team-logo-placeholder {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  background-color: #333;
+  border-radius: 8px; /* Slightly rounded square instead of circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border: 1px solid #444;
+}
+
+.team-name {
+  color: #f3f4f6;
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+.col-pts {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pts-value {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+}

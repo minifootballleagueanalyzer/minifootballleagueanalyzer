@@ -1,0 +1,317 @@
+[
+    {
+        "jornada": 1,
+        "equipo_local": "Charca",
+        "equipo_visitante": "Iluminaos Fc",
+        "goles_local": 15,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Victory Road",
+        "equipo_visitante": "Fc Esparragal",
+        "goles_local": 4,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Nottingham Miedo",
+        "equipo_visitante": "Ultimate City",
+        "goles_local": 0,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Los Ramos",
+        "equipo_visitante": "Real Suciedad",
+        "goles_local": 3,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Hefame Fc",
+        "equipo_visitante": "Junta Fc",
+        "goles_local": 4,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Fc Esparragal",
+        "equipo_visitante": "Charca",
+        "goles_local": 9,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Ultimate City",
+        "equipo_visitante": "Victory Road",
+        "goles_local": 4,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Real Suciedad",
+        "equipo_visitante": "Nottingham Miedo",
+        "goles_local": 4,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Junta Fc",
+        "equipo_visitante": "Los Ramos",
+        "goles_local": 3,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Iluminaos Fc",
+        "equipo_visitante": "Hefame Fc",
+        "goles_local": 6,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Hefame Fc",
+        "equipo_visitante": "Los Ramos",
+        "goles_local": 3,
+        "goles_visitante": 7
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Iluminaos Fc",
+        "equipo_visitante": "Fc Esparragal",
+        "goles_local": 3,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Charca",
+        "equipo_visitante": "Ultimate City",
+        "goles_local": 9,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Victory Road",
+        "equipo_visitante": "Real Suciedad",
+        "goles_local": 3,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Nottingham Miedo",
+        "equipo_visitante": "Junta Fc",
+        "goles_local": 1,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Los Ramos",
+        "equipo_visitante": "Nottingham Miedo",
+        "goles_local": 6,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Ultimate City",
+        "equipo_visitante": "Iluminaos Fc",
+        "goles_local": 5,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Real Suciedad",
+        "equipo_visitante": "Charca",
+        "goles_local": 4,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Junta Fc",
+        "equipo_visitante": "Victory Road",
+        "goles_local": 3,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Fc Esparragal",
+        "equipo_visitante": "Hefame Fc",
+        "goles_local": 5,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Iluminaos Fc",
+        "equipo_visitante": "Real Suciedad",
+        "goles_local": 0,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Victory Road",
+        "equipo_visitante": "Los Ramos",
+        "goles_local": 1,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Fc Esparragal",
+        "equipo_visitante": "Ultimate City",
+        "goles_local": 6,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Charca",
+        "equipo_visitante": "Junta Fc",
+        "goles_local": 5,
+        "goles_visitante": 7
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Hefame Fc",
+        "equipo_visitante": "Nottingham Miedo",
+        "goles_local": 0,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Real Suciedad",
+        "equipo_visitante": "Fc Esparragal",
+        "goles_local": 5,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Los Ramos",
+        "equipo_visitante": "Charca",
+        "goles_local": 3,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Nottingham Miedo",
+        "equipo_visitante": "Victory Road",
+        "goles_local": 3,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Junta Fc",
+        "equipo_visitante": "Iluminaos Fc",
+        "goles_local": 4,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Hefame Fc",
+        "equipo_visitante": "Ultimate City",
+        "goles_local": 4,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Ultimate City",
+        "equipo_visitante": "Real Suciedad",
+        "goles_local": 3,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Victory Road",
+        "equipo_visitante": "Hefame Fc",
+        "goles_local": 3,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Iluminaos Fc",
+        "equipo_visitante": "Los Ramos",
+        "goles_local": 2,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Fc Esparragal",
+        "equipo_visitante": "Junta Fc",
+        "goles_local": 4,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Charca",
+        "equipo_visitante": "Nottingham Miedo",
+        "goles_local": 3,
+        "goles_visitante": 9
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Junta Fc",
+        "equipo_visitante": "Ultimate City",
+        "goles_local": 4,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Los Ramos",
+        "equipo_visitante": "Fc Esparragal",
+        "goles_local": 0,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Hefame Fc",
+        "equipo_visitante": "Real Suciedad",
+        "goles_local": 0,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Nottingham Miedo",
+        "equipo_visitante": "Iluminaos Fc",
+        "goles_local": 11,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Victory Road",
+        "equipo_visitante": "Charca",
+        "goles_local": 2,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Real Suciedad",
+        "equipo_visitante": "Junta Fc",
+        "goles_local": 3,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Fc Esparragal",
+        "equipo_visitante": "Nottingham Miedo",
+        "goles_local": 3,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Iluminaos Fc",
+        "equipo_visitante": "Victory Road",
+        "goles_local": 3,
+        "goles_visitante": 8
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Ultimate City",
+        "equipo_visitante": "Los Ramos",
+        "goles_local": 9,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Charca",
+        "equipo_visitante": "Hefame Fc",
+        "goles_local": 3,
+        "goles_visitante": 0
+    }
+]

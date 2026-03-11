@@ -278,5 +278,40 @@
         "equipo_visitante": "Afed Fc",
         "goles_local": 2,
         "goles_visitante": 2
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Riomar Fc",
+        "equipo_visitante": "Blackrock Fc",
+        "goles_local": 3,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Freemium",
+        "equipo_visitante": "Inazuma Cabezo Fc",
+        "goles_local": 5,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Levante La Birra",
+        "equipo_visitante": "Champagne Fc",
+        "goles_local": 3,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "C.D Tocapelotas",
+        "equipo_visitante": "Los Gallos Fc",
+        "goles_local": 2,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Afed Fc",
+        "equipo_visitante": "Ud Las Piscinas",
+        "goles_local": 2,
+        "goles_visitante": 2
     }
 ]

@@ -6,6 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 import json
 import time
+import os
 
 # --- CONFIGURACIÓN DEL NAVEGADOR ---
 opciones = Options()
@@ -16,74 +17,97 @@ opciones.add_argument('--log-level=3')  # Oculta mensajes molestos de la consola
 print("Iniciando el navegador fantasma...")
 driver = webdriver.Chrome(options=opciones)
 
-todos_los_partidos = []
+competiciones = [
+    {"nombre": "Primera División", "id": 80, "archivo": "prim_div_mur.json", "jornadas": 18},
+    {"nombre": "Segunda División A", "id": 93, "archivo": "seg_div_murA.json", "jornadas": 9},
+    {"nombre": "Segunda División B", "id": 95, "archivo": "seg_div_murB.json", "jornadas": 9},
+    {"nombre": "Tercera División A", "id": 94, "archivo": "ter_div_murA.json", "jornadas": 9},
+    {"nombre": "Tercera División B", "id": 96, "archivo": "ter_div_murB.json", "jornadas": 9},
+    {"nombre": "Cuarta División", "id": 97, "archivo": "cuar_div_mur.json", "jornadas": 9}
+]
 
-# Iteramos las 8 jornadas
-for jornada in range(8):
-    url = f"https://minifootballleagues.com/tournaments/96?tab=calendar&stage=0&journey={jornada}"
-    print(f"Scrapeando Jornada {jornada + 1}...")
+for comp in competiciones:
+    print(f"\n========================================")
+    print(f"Iniciando scraping de {comp['nombre']}...")
+    print(f"========================================")
+    todos_los_partidos = []
 
-    # Le decimos al navegador que abra la URL
-    driver.get(url)
+    # Iteramos las jornadas según la competición
+    for jornada in range(int(comp["jornadas"])):
+        url = f"https://minifootballleagues.com/tournaments/{comp['id']}?tab=calendar&stage=0&journey={jornada}"
+        print(f"Scrapeando Jornada {jornada + 1} de {comp['jornadas']}...")
 
-    try:
-        # ESPERA INTELIGENTE: Esperamos hasta 10 segundos a que aparezca al menos un partido en pantalla
-        # Buscamos que cargue la clase que contiene 'styles_containerMatch'
-        WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, "//*[contains(@class, 'styles_containerMatch')]"))
-        )
-        # Le damos un segundito extra de margen para que renderice los textos internos
-        time.sleep(1)
+        # Le decimos al navegador que abra la URL
+        driver.get(url)
 
-    except Exception as e:
-        print(f"  Aviso: No se encontraron partidos o la jornada {jornada + 1} tardó mucho en cargar.")
-        continue  # Si falla, saltamos a la siguiente jornada
-
-    # --- EXTRACCIÓN CON BEAUTIFULSOUP ---
-    # Ahora sí, extraemos el HTML final con todo el JavaScript ya ejecutado
-    html_renderizado = driver.page_source
-    soup = BeautifulSoup(html_renderizado, 'html.parser')
-
-    # Buscamos las filas de los partidos (usando la misma lógica de lambda que antes)
-    filas_partidos = soup.find_all('div', class_=lambda c: c and 'styles_containerMatch' in c)
-
-    for fila in filas_partidos:
         try:
-            # 1. Extraer nombre del equipo local
-            elemento_local = fila.find('p', class_=lambda c: c and 'styles_teamNameLeft' in c)
-            equipo_local = elemento_local.text.strip() if elemento_local else "Desconocido"
-
-            # 2. Extraer nombre del equipo visitante
-            elemento_visitante = fila.find('p', class_=lambda c: c and 'styles_teamNameRight' in c)
-            equipo_visitante = elemento_visitante.text.strip() if elemento_visitante else "Desconocido"
-
-            # 3. Extraer el resultado
-            elemento_resultado = fila.find('p', class_=lambda c: c and 'styles_text' in c)
-            resultado_texto = elemento_resultado.text.strip() if elemento_resultado else ""
-
-            if '-' in resultado_texto:
-                goles = resultado_texto.split('-')
-                goles_local = int(goles[0].strip())
-                goles_visitante = int(goles[1].strip())
-
-                partido = {
-                    "jornada": jornada + 1,
-                    "equipo_local": equipo_local.title(),
-                    "equipo_visitante": equipo_visitante.title(),
-                    "goles_local": goles_local,
-                    "goles_visitante": goles_visitante
-                }
-
-                todos_los_partidos.append(partido)
+            # ESPERA INTELIGENTE: Esperamos hasta 10 segundos a que aparezca al menos un partido en pantalla
+            # Buscamos que cargue la clase que contiene 'styles_containerMatch'
+            WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, "//*[contains(@class, 'styles_containerMatch')]"))
+            )
+            # Le damos un segundito extra de margen para que renderice los textos internos
+            time.sleep(1)
 
         except Exception as e:
-            print(f"  Error procesando un partido: {e}")
+            print(f"  Aviso: No se encontraron partidos o la jornada {jornada + 1} tardó mucho en cargar.")
+            continue  # Si falla, saltamos a la siguiente jornada
+
+        # --- EXTRACCIÓN CON BEAUTIFULSOUP ---
+        # Ahora sí, extraemos el HTML final con todo el JavaScript ya ejecutado
+        html_renderizado = driver.page_source
+        soup = BeautifulSoup(html_renderizado, 'html.parser')
+
+        # Buscamos las filas de los partidos (usando la misma lógica de lambda que antes)
+        filas_partidos = soup.find_all('div', class_=lambda c: c and 'styles_containerMatch' in c)
+
+        for fila in filas_partidos:
+            try:
+                # 1. Extraer nombre del equipo local
+                elemento_local = fila.find('p', class_=lambda c: c and 'styles_teamNameLeft' in c)
+                equipo_local = elemento_local.text.strip() if elemento_local else "Desconocido"
+
+                # 2. Extraer nombre del equipo visitante
+                elemento_visitante = fila.find('p', class_=lambda c: c and 'styles_teamNameRight' in c)
+                equipo_visitante = elemento_visitante.text.strip() if elemento_visitante else "Desconocido"
+
+                # 3. Extraer el resultado
+                elemento_resultado = fila.find('p', class_=lambda c: c and 'styles_text' in c)
+                resultado_texto = elemento_resultado.text.strip() if elemento_resultado else ""
+
+                if '-' in resultado_texto:
+                    goles = resultado_texto.split('-')
+                    try:
+                        goles_local = int(goles[0].strip())
+                        goles_visitante = int(goles[1].strip())
+                    except ValueError:
+                        # Si el texto entre los guiones está vacío o no es numérico (ej: " - "), 
+                        # ignoramos y pasamos al siguiente partido (probablemente no se ha jugado)
+                        continue
+
+                    partido = {
+                        "jornada": jornada + 1,
+                        "equipo_local": equipo_local.title(),
+                        "equipo_visitante": equipo_visitante.title(),
+                        "goles_local": goles_local,
+                        "goles_visitante": goles_visitante
+                    }
+
+                    todos_los_partidos.append(partido)
+
+            except Exception as e:
+                print(f"  Error procesando un partido: {e}")
+
+    # --- GUARDAR LOS DATOS DE LA COMPETICIÓN ---
+    os.makedirs('jsons', exist_ok=True)
+    ruta_archivo = os.path.join('jsons', str(comp["archivo"]))
+    
+    with open(ruta_archivo, 'w', encoding='utf-8') as archivo_json:
+        json.dump(todos_los_partidos, archivo_json, ensure_ascii=False, indent=4)
+        
+    print(f"¡Scraping de {comp['nombre']} completado! Guardado en '{ruta_archivo}'.")
 
 # Cerramos el navegador para liberar memoria
 driver.quit()
 
-# --- GUARDAR LOS DATOS ---
-with open('resultados_liga.json', 'w', encoding='utf-8') as archivo_json:
-    json.dump(todos_los_partidos, archivo_json, ensure_ascii=False, indent=4)
-
-print("\n¡Scraping completado con éxito! Revisa tu archivo 'resultados_liga.json'.")
+print("\n¡Todo el scraping completado con éxito!")
