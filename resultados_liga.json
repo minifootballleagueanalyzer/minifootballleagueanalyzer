@@ -1,0 +1,282 @@
+[
+    {
+        "jornada": 1,
+        "equipo_local": "Afed Fc",
+        "equipo_visitante": "C.D Tocapelotas",
+        "goles_local": 2,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Inazuma Cabezo Fc",
+        "equipo_visitante": "Levante La Birra",
+        "goles_local": 3,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Los Gallos Fc",
+        "equipo_visitante": "Freemium",
+        "goles_local": 2,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Champagne Fc",
+        "equipo_visitante": "Riomar Fc",
+        "goles_local": 1,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Ud Las Piscinas",
+        "equipo_visitante": "Blackrock Fc",
+        "goles_local": 2,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Freemium",
+        "equipo_visitante": "Afed Fc",
+        "goles_local": 4,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "C.D Tocapelotas",
+        "equipo_visitante": "Ud Las Piscinas",
+        "goles_local": 4,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Riomar Fc",
+        "equipo_visitante": "Inazuma Cabezo Fc",
+        "goles_local": 4,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Blackrock Fc",
+        "equipo_visitante": "Champagne Fc",
+        "goles_local": 7,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Levante La Birra",
+        "equipo_visitante": "Los Gallos Fc",
+        "goles_local": 2,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "C.D Tocapelotas",
+        "equipo_visitante": "Freemium",
+        "goles_local": 2,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Los Gallos Fc",
+        "equipo_visitante": "Riomar Fc",
+        "goles_local": 2,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Afed Fc",
+        "equipo_visitante": "Levante La Birra",
+        "goles_local": 5,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Ud Las Piscinas",
+        "equipo_visitante": "Champagne Fc",
+        "goles_local": 4,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Inazuma Cabezo Fc",
+        "equipo_visitante": "Blackrock Fc",
+        "goles_local": 4,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Levante La Birra",
+        "equipo_visitante": "C.D Tocapelotas",
+        "goles_local": 3,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Blackrock Fc",
+        "equipo_visitante": "Los Gallos Fc",
+        "goles_local": 1,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Riomar Fc",
+        "equipo_visitante": "Afed Fc",
+        "goles_local": 2,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Champagne Fc",
+        "equipo_visitante": "Inazuma Cabezo Fc",
+        "goles_local": 8,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Freemium",
+        "equipo_visitante": "Ud Las Piscinas",
+        "goles_local": 0,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Freemium",
+        "equipo_visitante": "Levante La Birra",
+        "goles_local": 4,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Afed Fc",
+        "equipo_visitante": "Blackrock Fc",
+        "goles_local": 4,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "C.D Tocapelotas",
+        "equipo_visitante": "Riomar Fc",
+        "goles_local": 5,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Ud Las Piscinas",
+        "equipo_visitante": "Inazuma Cabezo Fc",
+        "goles_local": 4,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Los Gallos Fc",
+        "equipo_visitante": "Champagne Fc",
+        "goles_local": 3,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Champagne Fc",
+        "equipo_visitante": "Afed Fc",
+        "goles_local": 4,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Inazuma Cabezo Fc",
+        "equipo_visitante": "Los Gallos Fc",
+        "goles_local": 4,
+        "goles_visitante": 9
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Riomar Fc",
+        "equipo_visitante": "Freemium",
+        "goles_local": 2,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Blackrock Fc",
+        "equipo_visitante": "C.D Tocapelotas",
+        "goles_local": 1,
+        "goles_visitante": 8
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Levante La Birra",
+        "equipo_visitante": "Ud Las Piscinas",
+        "goles_local": 1,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Freemium",
+        "equipo_visitante": "Blackrock Fc",
+        "goles_local": 3,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "C.D Tocapelotas",
+        "equipo_visitante": "Champagne Fc",
+        "goles_local": 6,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Afed Fc",
+        "equipo_visitante": "Inazuma Cabezo Fc",
+        "goles_local": 7,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Ud Las Piscinas",
+        "equipo_visitante": "Los Gallos Fc",
+        "goles_local": 3,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Levante La Birra",
+        "equipo_visitante": "Riomar Fc",
+        "goles_local": 1,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Ud Las Piscinas",
+        "equipo_visitante": "Riomar Fc",
+        "goles_local": 1,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Inazuma Cabezo Fc",
+        "equipo_visitante": "C.D Tocapelotas",
+        "goles_local": 2,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Blackrock Fc",
+        "equipo_visitante": "Levante La Birra",
+        "goles_local": 6,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Champagne Fc",
+        "equipo_visitante": "Freemium",
+        "goles_local": 4,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Los Gallos Fc",
+        "equipo_visitante": "Afed Fc",
+        "goles_local": 2,
+        "goles_visitante": 2
+    }
+]
