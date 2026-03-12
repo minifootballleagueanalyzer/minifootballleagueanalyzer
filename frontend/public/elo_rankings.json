@@ -350,7 +350,7 @@
             "posicion": 7,
             "equipo": "Llamas Barber Studio",
             "puntos": 1486,
-            "logo": "/static/team/default5.png"
+            "logo": "https://minifootballleagues.com/static/team/default5.png"
         },
         {
             "posicion": 8,

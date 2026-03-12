@@ -1,5 +1,6 @@
 import React from 'react';
 import './Leaderboard.css';
+import murciaFlag from '../../assets/murcia_flag.jpeg';
 
 const Leaderboard = ({ rankings = [] }) => {
 
@@ -29,13 +30,12 @@ const Leaderboard = ({ rankings = [] }) => {
             </div>
 
             <div className="col-team">
-              {team.logo ? (
-                <img src={team.logo} alt={team.equipo} className="team-logo-image" />
-              ) : (
-                <div className="team-logo-placeholder">
-                  {team.equipo.substring(0, 2).toUpperCase()}
-                </div>
-              )}
+              <img
+                src={team.logo || murciaFlag}
+                alt={team.equipo}
+                className="team-logo-image"
+                onError={(e) => { e.target.src = murciaFlag; }}
+              />
               <span className="team-name">{team.equipo}</span>
             </div>
 
