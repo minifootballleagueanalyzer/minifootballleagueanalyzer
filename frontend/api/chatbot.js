@@ -86,7 +86,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: "Método no permitido. Usa POST." });
   }
 
-  const { question } = req.body ?? {};
+  const { question, context } = req.body ?? {};
 
   if (!question || typeof question !== "string" || question.trim().length === 0) {
     return res.status(400).json({ error: "Debes enviar el campo 'question' con tu pregunta." });
@@ -108,6 +108,20 @@ export default async function handler(req, res) {
   const rankings = await loadEloRankings(req);
   const eloContext = formatEloContext(rankings);
 
+  // Contexto de liga activo (opcional)
+  const DIVISION_LABELS = {
+    prim_div_mur: "1ª División Murciana",
+    seg_div_murA: "2ª División Murciana – Grupo A",
+    seg_div_murB: "2ª División Murciana – Grupo B",
+    ter_div_murA: "3ª División Murciana – Grupo A",
+    ter_div_murB: "3ª División Murciana – Grupo B",
+    cuar_div_mur: "4ª División Murciana",
+  };
+  const activeLeague = context && DIVISION_LABELS[context] ? DIVISION_LABELS[context] : null;
+  const contextInstruction = activeLeague
+    ? `\n## Contexto activo\nEl usuario ha seleccionado la liga: **${activeLeague}**. Centra tu respuesta en esa liga salvo que el usuario pregunte explícitamente por otra.`
+    : "";
+
   // Construye el prompt con el contexto de la skill league-data-analyst
   const systemPrompt = `Eres un analista experto de la MiniFootball League Murciana (minifootballleagues.com).
 Tu función es responder preguntas de los usuarios sobre rankings ELO, divisiones y estado de forma de los equipos.
@@ -118,18 +132,19 @@ Tu función es responder preguntas de los usuarios sobre rankings ELO, divisione
 - Las divisiones disponibles son: 1ª, 2ª Grupo A, 2ª Grupo B, 3ª Grupo A, 3ª Grupo B y 4ª División Murciana.
 
 ## Datos actuales de rankings ELO por división
-${eloContext}
+${eloContext}${contextInstruction}
 
 ## Instrucciones
 - Responde SIEMPRE en español.
-- Sé conciso, claro y amigable. Máximo 3-4 frases.
+- No uses formato Markdown. Responde como si fuera un chat normal.
+- Sé conciso, claro y amigable. Puédes explayarte si es necesario para explicar conceptos.
 - Usa los datos ELO proporcionados para dar respuestas precisas.
-- Si te preguntan por el "mejor equipo" sin especificar división, menciona el líder de 1ª División.
+- Si te preguntan por el "mejor equipo", "peor equipo", "más fuerte" o "más débil" sin especificar división, pregunta la liga.
 - No inventes datos que no estén en el contexto.`;
 
   try {
     const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
     const result = await model.generateContent([
       { text: systemPrompt },

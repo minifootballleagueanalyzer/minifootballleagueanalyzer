@@ -3,14 +3,22 @@ import './ChatbotWidget.css';
 
 // Preguntas predefinidas que el usuario puede hacer
 const PRESET_QUESTIONS = [
-  '¿Quién lidera la 1ª División?',
-  '¿Cuál es el mejor equipo de la 2ª División Grupo A?',
-  '¿Cuál es el mejor equipo de la 2ª División Grupo B?',
-  '¿Quién lidera la 3ª División Grupo A?',
-  '¿Quién lidera la 3ª División Grupo B?',
-  '¿Quién lidera la 4ª División?',
-  '¿Cuál es el ranking ELO completo de la 1ª División?',
+  '¿Qué es el ranking ELO?',
+  '¿Por qué no coincide el ranking ELO con la clasificación por puntos?',
+  '¿Cuál es el mejor equipo de la 3ª División Grupo B y por qué?',
   '¿Qué equipo tiene más puntos ELO en toda la liga?',
+  '¿Qué equipo tiene menos puntos ELO de todas las ligas?',
+  '¿Cuál es el mejor equipo?'
+];
+
+// Contextos de liga disponibles
+const LEAGUE_CONTEXTS = [
+  { key: 'prim_div_mur',  label: '1ª División' },
+  { key: 'seg_div_murA',  label: '2ª Div. Grupo A' },
+  { key: 'seg_div_murB',  label: '2ª Div. Grupo B' },
+  { key: 'ter_div_murA',  label: '3ª Div. Grupo A' },
+  { key: 'ter_div_murB',  label: '3ª Div. Grupo B' },
+  { key: 'cuar_div_mur',  label: '4ª División' },
 ];
 
 export default function ChatbotWidget() {
@@ -22,6 +30,7 @@ export default function ChatbotWidget() {
     },
   ]);
   const [loading, setLoading] = useState(false);
+  const [activeContext, setActiveContext] = useState(null);
   const messagesEndRef = useRef(null);
 
   useEffect(() => {
@@ -40,7 +49,7 @@ export default function ChatbotWidget() {
       const res = await fetch('/api/chatbot', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ question }),
+        body: JSON.stringify({ question, context: activeContext }),
       });
       const data = await res.json();
       setMessages((prev) => [
@@ -58,12 +67,17 @@ export default function ChatbotWidget() {
   }
 
   function handleReset() {
+    setActiveContext(null);
     setMessages([
       {
         role: 'assistant',
         text: '¡Hola! Soy el analista de la MiniFootball League 🟢 Selecciona una pregunta para empezar.',
       },
     ]);
+  }
+
+  function toggleContext(key) {
+    setActiveContext((prev) => (prev === key ? null : key));
   }
 
   return (
@@ -131,6 +145,30 @@ export default function ChatbotWidget() {
                 disabled={loading}
               >
                 {q}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Selector de contexto de liga */}
+        <div className="chatbot-context">
+          <p className="chatbot-presets__label">
+            Contexto de liga
+            {activeContext && (
+              <span className="chatbot-context__active-label">
+                {' '}· {LEAGUE_CONTEXTS.find(l => l.key === activeContext)?.label}
+              </span>
+            )}
+          </p>
+          <div className="chatbot-context__chips">
+            {LEAGUE_CONTEXTS.map(({ key, label }) => (
+              <button
+                key={key}
+                className={`chatbot-context__chip ${activeContext === key ? 'chatbot-context__chip--active' : ''}`}
+                onClick={() => toggleContext(key)}
+                title={activeContext === key ? 'Quitar filtro de liga' : `Filtrar por ${label}`}
+              >
+                {label}
               </button>
             ))}
           </div>

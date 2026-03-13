@@ -134,7 +134,7 @@ const Home = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="filters-section">
-        <h2 className="section-title">Análisis de Competición</h2>
+        <h1 className="section-title">Análisis de Competición MFL</h1>
         <div className="league-selector-wrapper">
           <CustomSelect 
             label="Selecciona una Competición"
@@ -176,19 +176,6 @@ const Home = () => {
         </AnimatePresence>
       </div>
 
-      <AnimatePresence>
-        {selectedLeague && rankingsData[selectedLeague] && (
-          <motion.div 
-            className="analysis-dashboard"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-          >
-            <Leaderboard rankings={rankingsData[selectedLeague]} />
-          </motion.div>
-        )}
-      </AnimatePresence>
-      
       {/* Custom Poisson Matrix Chart rendered when both teams are selected */}
       <AnimatePresence>
         {matchData && (
@@ -208,6 +195,19 @@ const Home = () => {
                 probAway={matchData.probAway}
               />
             </motion.div>
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {selectedLeague && rankingsData[selectedLeague] && (
+          <motion.div 
+            className="analysis-dashboard"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+          >
+            <Leaderboard rankings={rankingsData[selectedLeague]} />
+          </motion.div>
         )}
       </AnimatePresence>
     </motion.div>

@@ -14,6 +14,7 @@ const Leaderboard = ({ rankings = [] }) => {
 
   return (
     <div className="leaderboard-container">
+      <h2 className="leaderboard-title">POWER RANKING</h2>
       <div className="leaderboard-header">
         <span className="header-col-rank">Ranking</span>
         <span className="header-col-team">Equipo</span>

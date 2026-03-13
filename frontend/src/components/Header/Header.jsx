@@ -16,13 +16,13 @@ const Header = () => {
           <p className="title-sub">Murcia, Almería y Granada</p>
         </div>
       </div>
-      
+
       <div className="header-right">
         <div className="social-icons">
-          <a href="#" className="social-icon" aria-label="Instagram">
+          <a href="https://www.instagram.com/minifootballleagues_espana" className="social-icon" aria-label="Instagram">
             <Instagram size={24} strokeWidth={2} />
           </a>
-          <a href="#" className="social-icon" aria-label="Youtube">
+          <a href="https://www.youtube.com/channel/UCztHwYFe0WIDNA84WGJOWMg#" className="social-icon" aria-label="Youtube">
             <Youtube size={26} strokeWidth={2} />
           </a>
         </div>

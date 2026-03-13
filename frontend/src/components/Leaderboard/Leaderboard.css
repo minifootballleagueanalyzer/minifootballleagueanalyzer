@@ -6,6 +6,16 @@
   flex-direction: column;
 }
 
+.leaderboard-title {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
 .leaderboard-empty {
   color: var(--text-secondary, #a1a1aa);
   font-style: italic;
