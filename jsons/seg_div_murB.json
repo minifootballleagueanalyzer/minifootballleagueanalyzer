@@ -31,7 +31,7 @@
         "equipo_local": "Sabomur Stars",
         "escudo_local": "https://minifootballleagues.com/upload/D5/BC/mcozlixp.jpg",
         "equipo_visitante": "Llamas Barber Studio",
-        "escudo_visitante": "/static/team/default5.png",
+        "escudo_visitante": "https://minifootballleagues.com/static/team/default5.png",
         "goles_local": 4,
         "goles_visitante": 1
     },
@@ -56,7 +56,7 @@
     {
         "jornada": 2,
         "equipo_local": "Llamas Barber Studio",
-        "escudo_local": "/static/team/default5.png",
+        "escudo_local": "https://minifootballleagues.com/static/team/default5.png",
         "equipo_visitante": "Fc La Yanka",
         "escudo_visitante": "https://minifootballleagues.com/upload/CD/BD/u13gousq.jpg",
         "goles_local": 1,
@@ -94,7 +94,7 @@
         "equipo_local": "Los Trakas",
         "escudo_local": "https://minifootballleagues.com/upload/56/A4/vp0k0dtu.jpg",
         "equipo_visitante": "Llamas Barber Studio",
-        "escudo_visitante": "/static/team/default5.png",
+        "escudo_visitante": "https://minifootballleagues.com/static/team/default5.png",
         "goles_local": 4,
         "goles_visitante": 1
     },
@@ -164,7 +164,7 @@
     {
         "jornada": 4,
         "equipo_local": "Llamas Barber Studio",
-        "escudo_local": "/static/team/default5.png",
+        "escudo_local": "https://minifootballleagues.com/static/team/default5.png",
         "equipo_visitante": "Patriot",
         "escudo_visitante": "https://minifootballleagues.com/upload/3D/F0/cwcf5fiw.jpeg",
         "goles_local": 4,
@@ -202,7 +202,7 @@
         "equipo_local": "Blackout Fc",
         "escudo_local": "https://minifootballleagues.com/upload/B1/40/e4q3nk14.png",
         "equipo_visitante": "Llamas Barber Studio",
-        "escudo_visitante": "/static/team/default5.png",
+        "escudo_visitante": "https://minifootballleagues.com/static/team/default5.png",
         "goles_local": 2,
         "goles_visitante": 5
     },
@@ -254,7 +254,7 @@
     {
         "jornada": 6,
         "equipo_local": "Llamas Barber Studio",
-        "escudo_local": "/static/team/default5.png",
+        "escudo_local": "https://minifootballleagues.com/static/team/default5.png",
         "equipo_visitante": "Federicos Team",
         "escudo_visitante": "https://minifootballleagues.com/upload/D7/C4/wlxyezba.png",
         "goles_local": 6,
@@ -274,7 +274,7 @@
         "equipo_local": "Distrito Internazionale  Fc",
         "escudo_local": "https://minifootballleagues.com/upload/5A/8C/fm3wnzw2.png",
         "equipo_visitante": "Llamas Barber Studio",
-        "escudo_visitante": "/static/team/default5.png",
+        "escudo_visitante": "https://minifootballleagues.com/static/team/default5.png",
         "goles_local": 2,
         "goles_visitante": 3
     },
@@ -317,7 +317,7 @@
     {
         "jornada": 8,
         "equipo_local": "Llamas Barber Studio",
-        "escudo_local": "/static/team/default5.png",
+        "escudo_local": "https://minifootballleagues.com/static/team/default5.png",
         "equipo_visitante": "Niupi",
         "escudo_visitante": "https://minifootballleagues.com/upload/D9/AD/t2wbu3ur.jpeg",
         "goles_local": 3,
@@ -400,7 +400,7 @@
         "equipo_local": "Raal Murcia",
         "escudo_local": "https://minifootballleagues.com/upload/82/20/ncvi30wt.png",
         "equipo_visitante": "Llamas Barber Studio",
-        "escudo_visitante": "/static/team/default5.png",
+        "escudo_visitante": "https://minifootballleagues.com/static/team/default5.png",
         "goles_local": 3,
         "goles_visitante": 2
     }

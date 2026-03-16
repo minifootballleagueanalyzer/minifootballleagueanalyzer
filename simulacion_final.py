@@ -30,10 +30,15 @@ for archivo in archivos_json:
 
             for partido in partidos:
                 # Guardar escudos
+                def corregir_url(url):
+                    if url and url.startswith('/'):
+                        return f"https://minifootballleagues.com{url}"
+                    return url
+
                 if "escudo_local" in partido and partido["escudo_local"]:
-                    escudos_equipos[partido['equipo_local']] = partido['escudo_local']
+                    escudos_equipos[partido['equipo_local']] = corregir_url(partido['escudo_local'])
                 if "escudo_visitante" in partido and partido["escudo_visitante"]:
-                    escudos_equipos[partido['equipo_visitante']] = partido['escudo_visitante']
+                    escudos_equipos[partido['equipo_visitante']] = corregir_url(partido['escudo_visitante'])
 
                 # Si algún partido no tuviera todos los datos o estuviera pospuesto, 
                 # lo saltamos amablemente.

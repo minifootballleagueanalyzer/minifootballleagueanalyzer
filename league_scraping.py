@@ -73,6 +73,8 @@ for comp in competiciones:
                 container_local = fila.find('div', class_=lambda c: c and 'styles_teamContainerLeft' in c)
                 img_local = container_local.find('img', class_=lambda c: c and 'styles_teamLogo' in c) if container_local else None
                 escudo_local = img_local['src'] if img_local and 'src' in img_local.attrs else ""
+                if escudo_local.startswith('/'):
+                    escudo_local = f"https://minifootballleagues.com{escudo_local}"
 
                 # 2. Extraer nombre del equipo visitante
                 elemento_visitante = fila.find('p', class_=lambda c: c and 'styles_teamNameRight' in c)
@@ -82,6 +84,8 @@ for comp in competiciones:
                 container_visitante = fila.find('div', class_=lambda c: c and 'styles_teamContainerRight' in c)
                 img_visitante = container_visitante.find('img', class_=lambda c: c and 'styles_teamLogo' in c) if container_visitante else None
                 escudo_visitante = img_visitante['src'] if img_visitante and 'src' in img_visitante.attrs else ""
+                if escudo_visitante.startswith('/'):
+                    escudo_visitante = f"https://minifootballleagues.com{escudo_visitante}"
 
                 # 3. Extraer el resultado
                 elemento_resultado = fila.find('p', class_=lambda c: c and 'styles_text' in c)
