@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Home.css';
 import { ChevronDown } from 'lucide-react';
+import { useTranslation } from '../../hooks/useTranslation';
 import murciaFlag from '../../assets/murcia_flag.jpeg';
 import granadaFlag from '../../assets/granada_flag.png';
 import Leaderboard from '../Leaderboard/Leaderboard';
@@ -86,6 +87,7 @@ const CustomSelect = ({ label, options, value, onChange, placeholder }) => {
 };
 
 const Home = ({ rankingsData: initialRankingsData }) => {
+  const { t } = useTranslation();
   const [selectedLeague, setSelectedLeague] = useState('');
   const [selectedTeamA, setSelectedTeamA] = useState('');
   const [selectedTeamB, setSelectedTeamB] = useState('');
@@ -171,14 +173,14 @@ const Home = ({ rankingsData: initialRankingsData }) => {
       transition={{ duration: 0.5 }}
     >
       <div className="filters-section">
-        <h1 className="section-title">Análisis de Competición MFL</h1>
+        <h1 className="section-title">{t('home.title')}</h1>
         <div className="league-selector-wrapper">
           <CustomSelect 
-            label="Selecciona una Competición"
+            label={t('home.select_league')}
             options={LEAGUES}
             value={selectedLeague}
             onChange={setSelectedLeague}
-            placeholder="Elige una liga..."
+            placeholder={t('home.choose_league')}
           />
         </div>
 
@@ -190,22 +192,22 @@ const Home = ({ rankingsData: initialRankingsData }) => {
               animate={{ opacity: 1, height: 'auto' }}
               transition={{ duration: 0.3 }}
             >
-              <h3 className="subsection-title">Comparativa de Equipos (H2H)</h3>
+              <h3 className="subsection-title">{t('home.h2h_title')}</h3>
               <div className="teams-grid">
                 <CustomSelect 
-                  label="Equipo Local"
+                  label={t('home.team_home')}
                   options={leagueTeams.filter(team => team.id !== selectedTeamB)}
                   value={selectedTeamA}
                   onChange={setSelectedTeamA}
-                  placeholder="Selecciona el 1º equipo..."
+                  placeholder={t('home.select_team_1')}
                 />
                 <div className="vs-badge">VS</div>
                 <CustomSelect 
-                  label="Equipo Visitante"
+                  label={t('home.team_away')}
                   options={leagueTeams.filter(team => team.id !== selectedTeamA)}
                   value={selectedTeamB}
                   onChange={setSelectedTeamB}
-                  placeholder="Selecciona el 2º equipo..."
+                  placeholder={t('home.select_team_2')}
                 />
               </div>
             </motion.div>

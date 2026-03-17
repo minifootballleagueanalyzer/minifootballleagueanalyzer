@@ -3,6 +3,7 @@ import './MatrixChart.css';
 import { motion } from 'framer-motion';
 import murciaFlag from '../../assets/murcia_flag.jpeg';
 import granadaFlag from '../../assets/granada_flag.png';
+import { useTranslation } from '../../hooks/useTranslation';
 
 // Función para calcular factorial (memoizada implícitamente por el tamaño pequeño)
 const factorial = (n) => {
@@ -18,6 +19,7 @@ const poissonProbability = (xg, k) => {
 };
 
 const MatrixChart = ({ equipoHome, logoHome, equipoAway, logoAway, probHome, probAway, leagueId = '' }) => {
+  const { t } = useTranslation();
   const defaultFlag = leagueId.includes('_gra') || leagueId.includes('veteranos_gra') ? granadaFlag : murciaFlag;
   const flagSrc = typeof defaultFlag === 'object' ? defaultFlag.src : defaultFlag;
   // Asumimos 5.0 goles por partido como media (la misma lógica que tenías en Python)
@@ -86,8 +88,8 @@ const MatrixChart = ({ equipoHome, logoHome, equipoAway, logoAway, probHome, pro
   return (
     <div className="matrix-chart-wrapper">
       <div className="matrix-header">
-        <h3>Probabilidad de Resultados Exactos</h3>
-        <p>Distribución de Poisson basada en ELO</p>
+        <h3>{t('matrix.title')}</h3>
+        <p>{t('matrix.desc')}</p>
       </div>
 
       <div className="matrix-content">
@@ -120,7 +122,7 @@ const MatrixChart = ({ equipoHome, logoHome, equipoAway, logoAway, probHome, pro
         <div className="matrix-side-panels">
           <div className="panel-box panel-home">
             <span className="panel-prob">{matrixData.homeWinProb.toFixed(1)}%</span>
-            <span className="panel-title">VICTORIA LOCAL</span>
+            <span className="panel-title">{t('matrix.win_home')}</span>
             {logoHome && <img src={logoHome} alt={equipoHome} className="panel-logo" onError={(e) => { e.target.src = flagSrc; }} />}
             <span className="panel-team">{equipoHome?.substring(0, 15)}</span>
             <span className="panel-xg">{matrixData.xgHome.toFixed(2)} xG</span>
@@ -128,12 +130,12 @@ const MatrixChart = ({ equipoHome, logoHome, equipoAway, logoAway, probHome, pro
 
           <div className="panel-box panel-draw">
             <span className="panel-prob">{matrixData.drawProb.toFixed(1)}%</span>
-            <span className="panel-title">EMPATE</span>
+            <span className="panel-title">{t('matrix.draw')}</span>
           </div>
 
           <div className="panel-box panel-away">
             <span className="panel-prob">{matrixData.awayWinProb.toFixed(1)}%</span>
-            <span className="panel-title">VICTORIA VISITANTE</span>
+            <span className="panel-title">{t('matrix.win_away')}</span>
             {logoAway && <img src={logoAway} alt={equipoAway} className="panel-logo" onError={(e) => { e.target.src = flagSrc; }} />}
             <span className="panel-team">{equipoAway?.substring(0, 15)}</span>
             <span className="panel-xg">{matrixData.xgAway.toFixed(2)} xG</span>

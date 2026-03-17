@@ -2,26 +2,28 @@ import React from 'react';
 import './Leaderboard.css';
 import murciaFlag from '../../assets/murcia_flag.jpeg';
 import granadaFlag from '../../assets/granada_flag.png';
+import { useTranslation } from '../../hooks/useTranslation';
 
 const Leaderboard = ({ rankings = [], leagueId = '' }) => {
+  const { t } = useTranslation();
   const defaultFlag = leagueId.includes('_gra') || leagueId.includes('veteranos_gra') ? granadaFlag : murciaFlag;
   const flagSrc = typeof defaultFlag === 'object' ? defaultFlag.src : defaultFlag;
 
   if (!rankings || rankings.length === 0) {
     return (
       <div className="leaderboard-empty">
-        <p>Selecciona una competición para ver el Power Ranking.</p>
+        <p>{t('leaderboard.empty')}</p>
       </div>
     );
   }
 
   return (
     <div className="leaderboard-container">
-      <h2 className="leaderboard-title">POWER RANKING</h2>
+      <h2 className="leaderboard-title">{t('leaderboard.title')}</h2>
       <div className="leaderboard-header">
-        <span className="header-col-rank">Ranking</span>
-        <span className="header-col-team">Equipo</span>
-        <span className="header-col-pts">Pts</span>
+        <span className="header-col-rank">{t('leaderboard.col_rank')}</span>
+        <span className="header-col-team">{t('leaderboard.col_team')}</span>
+        <span className="header-col-pts">{t('leaderboard.col_pts')}</span>
       </div>
 
       <div className="leaderboard-body">

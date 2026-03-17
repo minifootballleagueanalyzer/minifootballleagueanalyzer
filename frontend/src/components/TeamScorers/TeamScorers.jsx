@@ -1,8 +1,10 @@
 import React from 'react';
 import './TeamScorers.css';
 import { motion } from 'framer-motion';
+import { useTranslation } from '../../hooks/useTranslation';
 
 const TeamScorers = ({ teamName, scorersData = [] }) => {
+  const { t } = useTranslation();
 
   // Filter scorers for this team and take top 5
   const topScorers = scorersData
@@ -12,7 +14,7 @@ const TeamScorers = ({ teamName, scorersData = [] }) => {
 
   return (
     <div className="team-scorers-container">
-      <h3 className="team-scorers-title">Top 5 Goleadores: {teamName}</h3>
+      <h3 className="team-scorers-title">{t('scorers.title')}: {teamName}</h3>
 
       <div className="scorers-list">
         {topScorers.length > 0 ? (
@@ -36,13 +38,13 @@ const TeamScorers = ({ teamName, scorersData = [] }) => {
 
               <div className="scorer-goals-badge">
                 <span className="goals-count">{player.goles}</span>
-                <span className="goals-label">Goles</span>
+                <span className="goals-label">{t('scorers.goals')}</span>
               </div>
             </motion.div>
           ))
         ) : (
           <div className="empty-scorers">
-            No hay datos de goleadores disponibles para este equipo.
+            {t('scorers.empty')}
           </div>
         )}
       </div>

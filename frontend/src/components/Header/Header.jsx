@@ -1,11 +1,14 @@
 import React from 'react';
 import './Header.css';
 import { Instagram, Youtube } from 'lucide-react';
+import { useTranslation } from '../../hooks/useTranslation';
+import { toggleLanguage } from '../../store/languageStore';
 
 import logoImage from '../../assets/main_logo.jpg';
 
 const Header = () => {
   const logoSrc = typeof logoImage === 'object' ? logoImage.src : logoImage;
+  const { t, language } = useTranslation();
 
   return (
     <header className="header">
@@ -15,7 +18,7 @@ const Header = () => {
         </div>
         <div className="header-titles">
           <h1 className="title-main">MINI FOOTBALL LEAGUES</h1>
-          <p className="title-sub">Murcia, Almería y Granada</p>
+          <p className="title-sub">{t('header.subtitle')}</p>
         </div>
       </div>
 
@@ -28,7 +31,12 @@ const Header = () => {
             <Youtube size={26} strokeWidth={2} />
           </a>
         </div>
-        <button className="lang-selector">ES</button>
+        <button 
+          className="lang-selector" 
+          onClick={toggleLanguage}
+        >
+          {language === 'es' ? 'ES' : 'EN'}
+        </button>
       </div>
     </header>
   );
