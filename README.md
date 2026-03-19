@@ -8,7 +8,11 @@ Las infografías se actualizan diariamente.
 
 La web muestra un menú desplegable permitiendo escoger la competición. Cada competición incluye:
 
-1. Power Ranking -> Equipos clasificados por estado de forma en el que llegan, no por puntos. Este Power Ranking estabasado en sistema ELO similar al que usa FIFA.
+1. Power Ranking -> Equipos clasificados por estado de forma en el que llegan, no por puntos. Este Power Ranking está basado en un sistema ELO similar al que usa FIFA. 
+   - **Comparativa Real**: La tabla incluye una comparativa visual con la clasificación oficial.
+   - 🟢: El equipo rinde mejor en ELO que en la liga oficial (Infravalorado).
+   - 🔴: El equipo rinde peor en ELO que en la liga oficial (Sobrevalorado).
+   - 🟰: Coinciden ELO y clasificación real.
 
 2. Tabla de cuotas de los encuentros de la próxima jornada 
 

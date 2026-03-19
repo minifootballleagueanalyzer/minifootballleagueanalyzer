@@ -134,8 +134,15 @@ const PointsEvolution = ({ teamA, teamB, evolutionA = [], evolutionB = [] }) => 
         <p className="progression-shape-text">{bestShapeText}</p>
       </div>
 
-      <div className="chart-container-evolution">
-        <Line data={data} options={options} />
+      <div className="chart-scroll-wrapper">
+        <div className="chart-container-evolution">
+          <Line data={data} options={options} />
+        </div>
+      </div>
+      
+      {/* Indicador visual sutil para móviles */}
+      <div className="chart-mobile-hint">
+        <span>↔ {language === 'es' ? 'Desliza para ver todas las jornadas' : 'Swipe to see all matchdays'}</span>
       </div>
     </div>
   );

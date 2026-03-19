@@ -33,11 +33,60 @@
   position: relative;
 }
 
+.chart-scroll-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 0.5rem;
+  cursor: grab;
+}
+
+.chart-scroll-wrapper:active {
+  cursor: grabbing;
+}
+
+.chart-mobile-hint {
+  display: none;
+  font-size: 0.75rem;
+  color: #64748b;
+  text-align: center;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+}
+
+/* Personalizo el scrollbar del gráfico */
+.chart-scroll-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+
+.chart-scroll-wrapper::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 10px;
+}
+
+.chart-scroll-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.chart-scroll-wrapper::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color, #3b82f6);
+}
+
 @media (max-width: 768px) {
   .chart-container-evolution {
-    height: 220px;
+    /* Hacemos el gráfico mucho más grande y ancho en móviles */
+    height: 400px;
+    min-width: 700px; 
   }
   
+  .chart-mobile-hint {
+    display: block;
+  }
+
   .progression-container {
     padding: 1rem;
     margin-top: 1rem;

@@ -49,6 +49,7 @@ MiniFootballLeagueAnalyzer/
 │   └── workflows/
 │       └── scraping.yml    # Runs scraping + ELO analysis daily at 02:00 UTC
 ├── jsons/                  # Raw match/standings data (one JSON per competition)
+│   ├── classification/     # Scraped real points for rank comparison
 │   ├── prim_div_mur.json
 │   ├── seg_div_murA.json
 │   ├── seg_div_murB.json
