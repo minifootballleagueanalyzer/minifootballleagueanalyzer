@@ -23,34 +23,58 @@ jobs:
 
     - name: Instalar Google Chrome
       run: |
+        # Añade la clave de firma de Google para poder descargar el paquete oficial
         wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+        
+        # Añade el repositorio de Chrome a la lista de fuentes del gestor de paquetes apt
         echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
+        
+        # Actualiza el índice de paquetes del sistema
         sudo apt-get update
+        
+        # Instala la versión estable de Chrome necesaria para que Selenium funcione en modo headless
         sudo apt-get install -y google-chrome-stable
 
     - name: Instalar dependencias de Python
       run: |
+        # Instala todas las librerías necesarias especificadas en requirements.txt
         pip install -r requirements.txt
 
     - name: Ejecutar Scraping
       run: |
+        # Inicia el proceso de extracción de datos de la web original
         python league_scraping.py
         
     - name: Ejecutar Análisis ELO
       run: |
+        # Procesa los resultados obtenidos para calcular rankings ELO y generar archivos para el frontend
         python simulacion_final.py
 
     - name: Sincronizar Logos y Avatares (Local)
       run: |
+        # Descarga las imágenes externas y las convierte en archivos locales con nombres MD5
         python sync_logos.py
 
     - name: Hacer commit y push de los nuevos datos e imágenes
       run: |
+        # Configura la identidad del bot de GitHub Actions para el commit
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git add jsons/*.json
-        git add frontend/public/*.json
-        git add frontend/public/images/teams/*.jpg frontend/public/images/teams/*.png frontend/public/images/teams/*.webp frontend/public/images/teams/*.svg || echo "Sin logos de equipos nuevos"
-        git add frontend/public/images/players/*.jpg frontend/public/images/players/*.png frontend/public/images/players/*.webp frontend/public/images/players/*.svg || echo "Sin avatares de jugadores nuevos"
-        git commit -m "Actualización nocturna: resultados, ELO y localización de imágenes" || echo "No hay cambios para commitear"
+        
+        # Prepara todos los archivos JSON modificados (incluyendo subcarpetas como stats)
+        git add jsons/*.json jsons/**/*.json 2>/dev/null || echo "No se encontraron otros JSONs en jsons"
+        
+        # Prepara los archivos JSON generados para el frontend
+        git add frontend/public/*.json frontend/public/**/*.json 2>/dev/null || echo "No se encontraron otros JSONs en frontend/public"
+       
+        # Añade los nuevos logos de los equipos descargados
+        git add frontend/public/images/teams/* || echo "Sin logos de equipos nuevos"
+        
+        # Añade los nuevos avatares de los jugadores descargados
+        git add frontend/public/images/players/* || echo "Sin avatares de jugadores nuevos"
+        
+        # Crea el commit con un mensaje descriptivo
+        git commit -m "Actualización nocturna completada con éxito" || echo "No hay cambios para commitear"
+       
+        # Sube los cambios al repositorio principal en GitHub
         git push

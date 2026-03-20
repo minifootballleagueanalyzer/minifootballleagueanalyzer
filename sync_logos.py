@@ -1,182 +1,214 @@
-import json
-import os
-import hashlib
-import requests
-import re
-from pathlib import Path
+import json # Para trabajar con archivos JSON
+import os # Para interactuar con el sistema de archivos
+import hashlib # Para generar hashes MD5 de las imágenes
+import requests # Para las peticiones HTTP
+import re # Para buscar patrones en las URLs
+from pathlib import Path # Para trabajar con rutas de archivos
 
 # --- CONFIGURACIÓN DE RUTAS ---
-# Definimos las rutas base del proyecto para asegurar que el script funcione correctamente
-# tanto localmente como en GitHub Actions.
-BASE_DIR = Path('c:/Users/Javi/Coding/MiniFootballLeagueAnalyzer')
+
+# Definimos las rutas base del proyecto para asegurar que el script funcione correctamente tanto localmente (mi Windows) como en GitHub Actions (Ubuntu 22.04)
+# Haciendo uso de rutas relativas dinámicas:
+BASE_DIR = Path(__file__).resolve().parent # Obtiene la ruta del directorio actual del script (/)
+
 JSONS_DIR = BASE_DIR / 'jsons'
 PUBLIC_DIR = BASE_DIR / 'frontend' / 'public'
+
 # Carpeta donde guardaremos los escudos de los equipos
 LOGOS_TEAMS_DIR = PUBLIC_DIR / 'images' / 'teams'
 # Carpeta donde guardaremos las fotos (avatares) de los jugadores
 LOGOS_PLAYERS_DIR = PUBLIC_DIR / 'images' / 'players'
 
-# Aseguramos que existan las carpetas de destino; si no, las creamos recursivamente.
+# Aseguramos que existan las carpetas de destino; si no, las creamos recursivamente
 LOGOS_TEAMS_DIR.mkdir(parents=True, exist_ok=True)
 LOGOS_PLAYERS_DIR.mkdir(parents=True, exist_ok=True)
 
+# Función para obtener la extensión del archivo:
 def get_extension(url, content_type):
+
     """
     Intenta determinar la extensión correcta del archivo (.jpg, .png, etc.)
     priorizando la información del servidor (Content-Type) y luego la URL.
     """
+
     # 1. Prioridad: Lo que nos diga el servidor en las cabeceras HTTP
     if content_type:
-        if 'image/jpeg' in content_type: return '.jpg'
+        if 'image/jpeg' in content_type: return '.jpg' 
         if 'image/png' in content_type: return '.png'
         if 'image/webp' in content_type: return '.webp'
         if 'image/svg+xml' in content_type: return '.svg'
     
     # 2. Secundaria: Buscar la extensión directamente en la cadena de la URL
     match = re.search(r'\.(jpg|jpeg|png|webp|svg|gif)(\?.*)?$', url.lower())
-    if match:
-        ext = match.group(1)
-        return f'.{ext}' if ext != 'jpeg' else '.jpg'
+
+    if match: # Si encuentra una extensión en la URL
+        ext = match.group(1) # Obtiene la extensión
+        return f'.{ext}' if ext != 'jpeg' else '.jpg' # Devuelve la extensión (si es jpeg, devuelve jpg)
     
     # Si todo falla, usamos .jpg por defecto (el más común en el portal)
     return '.jpg'
 
+# Función para mostrar una barra de progreso por terminal:
 def print_progress_bar(iteration, total, prefix='', suffix='', decimals=1, length=40, fill='█', print_end="\r"):
-    """
-    Muestra una barra de progreso en la terminal.
-    """
-    percent = ("{0:." + str(decimals) + "f}").format(100 * (iteration / float(total)))
-    filled_length = int(length * iteration // total)
-    bar = fill * filled_length + '-' * (length - filled_length)
-    print(f'\r{prefix} |{bar}| {percent}% {suffix}', end=print_end)
+    if total == 0: return
+    percent = ("{0:." + str(decimals) + "f}").format(100 * (iteration / float(total))) # Calcula el porcentaje
+    filled_length = int(length * iteration // total) # Calcula la longitud de la barra
+    bar = fill * filled_length + '-' * (length - filled_length) # Crea la barra
+    print(f'\r{prefix} |{bar}| {percent}% {suffix}', end=print_end) # Imprime la barra
     # Nueva línea al finalizar
-    if iteration == total: 
+    if iteration == total:  
         print()
 
-def download_image(url, target_dir, stats=None):
-    """
-    Gestiona la descarga de una imagen externa con soporte para estadísticas de progreso.
-    """
-    if not url or not url.startswith('http'):
+# Función para descargar la imagen externa:
+def download_image(url, target_dir, stats=None): # parámetros: URL de la imagen, directorio donde guardarla (target_dir), estadísticas (stats) para progreso
+
+    if not url or not url.startswith('http'): # Si la URL no es válida, la devolvemos 
         return url
     
-    url_hash = hashlib.md5(url.encode('utf-8')).hexdigest()
+    url_hash = hashlib.md5(url.encode('utf-8')).hexdigest() # Generamos un hash md5 de la URL, que será el nombre del archivo
     
     # Lógica de progreso: solo sumamos si es la primera vez que vemos esta URL en esta ejecución
-    if stats and url not in stats['processed_urls']:
-        stats['processed_urls'].add(url)
-        stats['current'] += 1
-        print_progress_bar(stats['current'], stats['total'], prefix='Progreso:', suffix='Procesando', length=50)
 
-    for ext in ['.jpg', '.png', '.webp', '.svg']:
-        potential_path = target_dir / f"{url_hash}{ext}"
-        if potential_path.exists():
-            return f"/images/{target_dir.name}/{url_hash}{ext}"
+    if stats and url not in stats['processed_urls']: # Si el diccionario de estadísticas existe y la URL no ha sido procesada
+        stats['processed_urls'].add(url) # Añadimos la URL al conjunto de URLs procesadas
+        stats['current'] += 1 # Incrementamos el contador de progreso
+        print_progress_bar(stats['current'], stats['total'], prefix='Progreso:', suffix='Procesando', length=50) # Actualizamos la barra de progreso
 
-    try:
-        response = requests.get(url, timeout=10, stream=True)
-        response.raise_for_status()
+    # Comprueba si la imagen ya existe con alguna extensión
+    for ext in ['.jpg', '.png', '.webp', '.svg']: 
+
+        potential_path = target_dir / f"{url_hash}{ext}" # Construye la ruta potencial
+
+        if potential_path.exists(): # Si la imagen existe
+            return f"/images/{target_dir.name}/{url_hash}{ext}" # Devuelve la ruta relativa
+
+    # Si la imagen no existe, la intento descargar:
+    try: 
+
+        response = requests.get(url, timeout=10, stream=True) # Realiza la petición HTTPGET a la URL, timeout de 10 segundos, stream=True para descargar en trozos
+        response.raise_for_status() # Lanza una excepción si hay un error en la petición
         
-        ext = get_extension(url, response.headers.get('Content-Type'))
-        filename = f"{url_hash}{ext}"
-        local_path = target_dir / filename
+        ext = get_extension(url, response.headers.get('Content-Type')) # Obtiene la extensión de la imagen
+        filename = f"{url_hash}{ext}" # Nombre del archivo (hash + extensión)
+        local_path = target_dir / filename # Ruta local (directorio + nombre del archivo)
         
-        with open(local_path, 'wb') as f:
-            for chunk in response.iter_content(chunk_size=8192):
-                f.write(chunk)
+        with open(local_path, 'wb') as f: # Abre el archivo en modo escritura binaria (write binary)
+            for chunk in response.iter_content(chunk_size=8192): # Descarga la imagen en trozos (chunks) de 8192 bytes (ocupando permanentemente solo 8KB de RAM)
+                f.write(chunk) # Escribe el chunk en el archivo
             
-        return f"/images/{target_dir.name}/{filename}"
-    except Exception:
-        return url
+        return f"/images/{target_dir.name}/{filename}" # Devuelve la ruta relativa (/images/teams/hash.jpg o /images/players/hash.jpg)
 
-def collect_urls(data, urls_set):
-    """Colecciona todas las URLs únicas de imágenes en el JSON."""
-    if isinstance(data, dict):
-        for k, v in data.items():
-            if k in ['logo', 'escudo_local', 'escudo_visitante', 'avatar']:
-                if isinstance(v, str) and v.startswith('http'):
-                    urls_set.add(v)
+    except Exception: # Si hay algún error al descargar la imagen
+        return url # Devuelve la URL original
+
+# Función recursiva para encontrar URLs de imágenes
+
+def get_image_urls(obj):
+
+    """Generador que recorre recursivamente el JSON y devuelve (objeto_padre, clave, url)"""
+    
+    if isinstance(obj, dict): # Si el objeto es un diccionario
+
+        # Recorremos las claves y valores del diccionario
+        for k, v in list(obj.items()): # Usamos el método 'list()' para poder modificar el dict durante la iteración
+
+            # Si la clave (k) es una de las que nos interesan ('logo', 'escudo_local', 'escudo_visitante' o 'avatar') 
+            # Y (AND lógico)
+            # el valor (v) es una URL (es una string Y comienza por 'http')
+            if k in ['logo', 'escudo_local', 'escudo_visitante', 'avatar'] and isinstance(v, str) and v.startswith('http'):
+                yield obj, k, v # Generamos una tupla con el objeto padre (obj), la clave (k) y la URL (v)
+            
+            # En caso contrario
             else:
-                collect_urls(v, urls_set)
-    elif isinstance(data, list):
-        for item in data:
-            collect_urls(item, urls_set)
+                yield from get_image_urls(v) # Llamamos recursivamente a la función para buscar en el valor (v), por si este valor es otro diccionario o una lista
 
+    elif isinstance(obj, list): # Si, por el contrario, el objeto es una lista
+
+        for item in obj: # Para cada elemento de la lista
+            yield from get_image_urls(item) # Llamamos recursivamente a la función (por si algún elemento es un diccionario u otra lista)
+
+
+# Función para procesar cada archivo JSON y reemplazar las URLs con rutas locales:
 def process_file(file_path, stats):
-    """Procesa un JSON usando las estadísticas para la barra de progreso."""
-    changed = False
+    
+    changed = False # Flag para indicar si ha habido cambios en el archivo
+
     try:
-        with open(file_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-        
-        def traverse(obj):
-            nonlocal changed
-            if isinstance(obj, dict):
-                for k in list(obj.keys()):
-                    val = obj[k]
-                    if k in ['logo', 'escudo_local', 'escudo_visitante']:
-                        if isinstance(val, str) and val.startswith('http'):
-                            new_path = download_image(val, LOGOS_TEAMS_DIR, stats)
-                            if new_path != val:
-                                obj[k] = new_path
-                                changed = True
-                    elif k == 'avatar':
-                        if isinstance(val, str) and val.startswith('http'):
-                            new_path = download_image(val, LOGOS_PLAYERS_DIR, stats)
-                            if new_path != val:
-                                obj[k] = new_path
-                                changed = True
-                    else:
-                        traverse(val)
-            elif isinstance(obj, list):
-                for item in obj:
-                    traverse(item)
 
-        traverse(data)
+        with open(file_path, 'r', encoding='utf-8') as f: # Abrimos el archivo en modo lectura
+            data = json.load(f) # Cargamos el JSON
         
-        if changed:
-            with open(file_path, 'w', encoding='utf-8') as f:
-                json.dump(data, f, ensure_ascii=False, indent=4)
+        for obj, k, url in get_image_urls(data):
+            # Determinamos la carpeta de destino según el tipo de imagen
+            target_dir = LOGOS_TEAMS_DIR if k in ['logo', 'escudo_local', 'escudo_visitante'] else LOGOS_PLAYERS_DIR
             
-    except Exception as e:
-        print(f"\nError procesando {file_path}: {e}")
+            new_path = download_image(url, target_dir, stats) # Descarga la imagen
+            if new_path != url: # Si la imagen ha sido descargada o ya existía localmente
+                obj[k] = new_path # Reemplaza la URL por la ruta local
+                changed = True # Indica que ha habido cambios
+        
+        if changed: # Si ha habido cambios en el archivo
+            with open(file_path, 'w', encoding='utf-8') as f: # Abrimos el archivo en modo escritura
+                json.dump(data, f, ensure_ascii=False, indent=4) # Guardamos el JSON modificado
+            
+    except Exception as e: # Si hay algún error al procesar el archivo
+        print(f"\nError procesando {file_path}: {e}") # Imprimimos el error
 
-if __name__ == "__main__":
-    print("Iniciando sincronización de logos...")
+# Función Main que se ejecuta cuando se corre el script
+if __name__ == "__main__": 
+
+    print("\nIniciando sincronización de logos...")
     
-    # 1. Primero contamos todas las URLs únicas para la barra de progreso
-    all_urls = set()
-    json_files = []
+    json_files = [] # Lista de archivos JSON a procesar
     
-    for root, dirs, files in os.walk(JSONS_DIR):
-        for f in files:
-            if f.endswith('.json'):
-                path = Path(root) / f
-                json_files.append(path)
-                with open(path, 'r', encoding='utf-8') as file:
-                    try:
-                        collect_urls(json.load(file), all_urls)
-                    except: pass
-                    
+    # Recopilamos todos los archivos JSON de los directorios clave
+    target_dirs = [JSONS_DIR, PUBLIC_DIR / 'stats']
+    
+    for t_dir in target_dirs: # Para cada directorio clave
+        if t_dir.exists(): # Si el directorio existe
+            for root, _, files in os.walk(t_dir): # Recorremos el directorio
+                for f in files: # Para cada archivo
+                    if f.endswith('.json'): # Si el archivo es un JSON
+                        json_files.append(Path(root) / f) # Añadimos el archivo a la lista 
+                        
+
+    # Añadimos el archivo de rankings ELO
     elo_file = PUBLIC_DIR / 'elo_rankings.json'
-    if elo_file.exists():
-        json_files.append(elo_file)
-        with open(elo_file, 'r', encoding='utf-8') as file:
-            try:
-                collect_urls(json.load(file), all_urls)
-            except: pass
+
+    if elo_file.exists(): # Si el archivo existe
+        json_files.append(elo_file) # Añadimos el archivo a la lista
+
+
+    # 1. Primero contamos todas las URLs únicas para la barra de progreso
+    all_urls = set() # Almacenadas en un conjunto para evitar duplicados
+
+    for path in json_files: # Para cada archivo JSON
+
+        try: # Intentamos abrir el archivo
+
+            with open(path, 'r', encoding='utf-8') as file: # Abrimos el archivo en modo lectura
+                
+                data = json.load(file) # Cargamos el JSON
+
+                for _, _, url in get_image_urls(data): # Para cada URL
+                    all_urls.add(url) # Añadimos la URL al conjunto
+
+        except Exception: # Si hay algún error al procesar el archivo
+            print(f"\nError procesando el JSON {path}: {e}") # Imprimimos el error
+            pass
+            
+    total_images = len(all_urls) # Total de imágenes únicas 
+
+    print(f"\nDetectadas {total_images} imágenes únicas para procesar.")
     
-    total_images = len(all_urls)
-    print(f"Detectadas {total_images} imágenes únicas para procesar.")
+    stats = {'total': total_images, 'current': 0, 'processed_urls': set()} # Estadísticas de la barra de progreso
     
-    stats = {'total': total_images, 'current': 0, 'processed_urls': set()}
-    
-    # Inicializar barra
+    # Inicializar barra de progreso
     if total_images > 0:
-        print_progress_bar(0, total_images, prefix='Progreso:', suffix='Iniciando', length=50)
+        print_progress_bar(0, total_images, prefix='Progreso:', suffix='Iniciando', length=50) # Imprime la barra de progreso
 
     # 2. Procesamos los archivos
-    for path in json_files:
-        process_file(path, stats)
+    for path in json_files: # Por cada archivo JSON
+        process_file(path, stats) # Procesamos el archivo
         
     print("\n¡Sincronización completada con éxito!")
