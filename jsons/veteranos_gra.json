@@ -313,5 +313,14 @@
         "escudo_visitante": "/images/teams/c101d95e9bf9072a5981423ca6f7443b.jpg",
         "goles_local": 0,
         "goles_visitante": 6
+    },
+    {
+        "jornada": 11,
+        "equipo_local": "Celtic Pulianas",
+        "escudo_local": "/images/teams/c101d95e9bf9072a5981423ca6f7443b.jpg",
+        "equipo_visitante": "Atlético La Zubia",
+        "escudo_visitante": "/images/teams/f4712bb148ff0fa5899a9a6ca2affa8e.jpg",
+        "goles_local": 3,
+        "goles_visitante": 1
     }
 ]
