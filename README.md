@@ -1,22 +1,29 @@
-# Qué es MiniFootballLeagueAnalyzer?
+🇪🇸 [Español](README.md) | 🇬🇧 [English](README_EN.md)
+---
 
-MiniFootballLeagueAnalyzer es una herramienta que aplica análisis de datos de fútbol a la MiniFootballLeague de España (https://minifootballleagues.com/). 
+# ¿Qué es MiniFootballLeagueAnalyzer?
 
-Extráe información de las competiciones mediante scraping web y muestra infografías útiles que permiten a los equipos tanto estudiar a sus rivales como conocer sus fortalezas y debilidades.
+MiniFootballLeagueAnalyzer es una herramienta avanzada de análisis de datos de fútbol aplicada a la MiniFootballLeague de España (https://minifootballleagues.com/). 
 
-Las infografías se actualizan diariamente.
+![Página principal](/images/main.png)
 
-La web muestra un menú desplegable permitiendo escoger la competición. Cada competición incluye:
+Extráe información de las competiciones mediante web scraping y provee infografías útiles que permiten a los equipos estudiar a sus rivales, así como conocer sus propias fortalezas y debilidades.
 
-1. Power Ranking -> Equipos clasificados por estado de forma en el que llegan, no por puntos. Este Power Ranking está basado en un sistema ELO similar al que usa FIFA. 
+Las infografías y rankings se actualizan **diariamente**.
+
+La web cuenta con un menú desplegable para seleccionar la competición deseada. Cada competición incluye:
+
+1. **Power Ranking**: Equipos clasificados por su estado de forma actual y no por puntos oficiales. Este Power Ranking está basado en un sistema ELO similar al que utiliza la FIFA. 
    - **Comparativa Real**: La tabla incluye una comparativa visual con la clasificación oficial.
    - 🟢: El equipo rinde mejor en ELO que en la liga oficial (Infravalorado).
    - 🔴: El equipo rinde peor en ELO que en la liga oficial (Sobrevalorado).
    - 🟰: Coinciden ELO y clasificación real.
 
-2. Tabla de cuotas de los encuentros de la próxima jornada 
+![Power Ranking](/images/power_ranking.png)
 
-Se incluyen las siguientes competiciones de F7:
+2. **Tabla de cuotas**: Probabilidades de los encuentros de la próxima jornada. 
+
+Se incluyen las siguientes competiciones de Fútbol 7:
 - Primera División Murcia
 - Segunda División A Murcia
 - Segunda División B Murcia
@@ -27,18 +34,26 @@ Se incluyen las siguientes competiciones de F7:
 - Segunda División Granada
 - Liga Veteranos (+35) Granada
 
-La web también muestra un menú desplegable permitiendo escoger dos equipo dentro de cada competición. Para cada pareja de equipos se incluirá:
+3. **Mapa de Sedes**: Localización interactiva (vía Mapbox) de todos los campos de juego de las ligas, incluyendo direcciones exactas y navegación integrada.
 
-- Tabla de cuotas (resultados más probables, porcentajes y xG)
+![Mapa de Sedes](/images/map.png)
 
-- Evolución de ELO desde el comienzo de la liga de ambos equipos
+La web también dispone de un comparador cara a cara (H2H) al seleccionar dos equipos de una misma competición, mostrando:
 
-- Gráfico de radar con:
-  -   Poder Ofensivo -> Capacidad bruta de anotación.
-  - Solidez Defensiva	-> Capacidad para evitar goles.
-  - Fair Play	-> Nivel de disciplina (puntuas más si tienes menos tarjetas).
-  - Reparto del Gol	100% ->	Si el valor es alto, el equipo no depende de un solo hombre.
-  - Diferencia de Gol -> El balance general de competitividad.
+- **Tabla de cuotas**: Resultados más probables, porcentajes y Goles Esperados (xG).
+
+![Tabla_cuotas](/images/odds_table.png)
+
+- **Evolución ELO**: Gráfica con la progresión de ELO de ambos equipos desde el comienzo de la liga.
+
+![ELO_evolution](/images/elo_evolution.png)
+
+- **Gráfico de radar** con las métricas:
+  - **Poder Ofensivo**: Capacidad bruta de anotación.
+  - **Solidez Defensiva**: Capacidad para evitar goles.
+  - **Fair Play**: Nivel de disciplina (mayor puntuación cuantas menos tarjetas).
+  - **Reparto del Gol**: Si el porcentaje es cercano al 100%, el equipo no depende de un solo goleador.
+  - **Diferencia de Gol**: El balance general de competitividad del equipo.
 
 ## Workflow del Proyecto
 
@@ -61,32 +76,24 @@ graph TD
     H -->|Visualización| I[Usuario Final]
 ```
 
-
 ### Backend
 
-#### Recolección de datos
+#### Recolección de Datos
+Se utiliza **Python** con **Selenium** y **BeautifulSoup** para recolectar los datos de la web oficial, almacenándolos en archivos JSON dentro de la carpeta `/jsons` para su posterior análisis.
 
-Se utiliza Python con Selenium y BeautifulSoup para recolectar los datos de la web, almacenándolos en un archivo JSON dentro de la carpeta ``/jsons`` para su posterior análisis.
+#### Power Ranking (Algoritmo ELO)
+Está basado en el sistema ELO tradicional, pero incorpora 2 multiplicadores analíticos específicos:
+1. **Margen de Victoria**: Multiplicador de "goleada". Cuanto mayor sea la diferencia de goles en la victoria, más puntos ELO se ganan.
+2. **Degradación Temporal (Time-Decay)**: Se otorga mayor peso e importancia a las últimas jornadas disputadas frente a las del inicio de la temporada.
 
-#### Power Ranking
+Los JSONs raw (en crudo) son procesados por el algoritmo para exportar un ranking global en el archivo final `elo_rankings.json`.
 
-Basado en sistema ELO tradicional, pero incluye 2 multiplicadores analíticos:
-1.  Margen de Victoria: Multiplicador de "goleada". Si ganas por más goles, ganas más puntos ELO.
-2.  Degradación Temporal (Time-Decay): Se da más peso a las últimas jornadas disputadas que a las primeras.
-
-Los JSONs son inyectados dentro del algoritmo y se exporta un ranking global en otro archivo JSON (`elo_rankings.json`).
-
-### H2H (Enfrentamientos directos)
+![Goleadores](/images/scorers.png)
 
 ### Automatización
-Los datos se actualizan diariamente mediante CI / GitHub Actions.   
+Todo el ciclo de recolección de datos y actualización de rankings está automatizado y se ejecuta diariamente mediante CI/CD con **GitHub Actions**.
 
-### Chatbot 
+### Chatbot IA
+Integración de un **Chatbot con IA** (potenciado por un modelo de _Google Gemini_) que permite consultar información en tiempo real sobre los equipos y la competición. Se accede a él mediante el botón flotante en la esquina inferior derecha del frontend.
 
-Chatbot con IA de la familia Gemini que permite consultar información sobre los equipos y las competiciones. Se puede acceder a él mediante un botón en la esquina inferior derecha de la web. 
-
-
-
-
-
-
+![Chatbot IA](/images/chatbot.png)

@@ -1,119 +1,106 @@
 # AGENTS.md — MiniFootballLeagueAnalyzer
 
-## Project overview
+## Project Overview
 
-MiniFootballLeagueAnalyzer is a two-layer project:
+MiniFootballLeagueAnalyzer is an automated data pipeline and visualization platform for Spanish amateur football:
 
-| Layer | Tech | Root |
-|-------|------|------|
+| Layer | Tech Stack | Location |
+|-------|------------|----------|
 | **Backend** | Python 3.10 | `/` (repo root) |
 | **Frontend** | Astro 5 + React 19 | `/frontend/` |
 
-The backend scrapes match data from [minifootballleagues.com](https://minifootballleagues.com/), calculates ELO rankings, and writes JSON files that the frontend consumes via SSG (Static Site Generation). GitHub Actions keeps everything in sync automatically every night.
+The backend scrapes match data from [minifootballleagues.com](https://minifootballleagues.com/), calculates ELO rankings based on form and goal margin, and exports JSON files that the frontend consumes using Static Site Generation (SSG).
 
 ---
 
-## Dev environment tips
+## Technical Context
 
-### Python backend
+### Data Pipeline
+1. **Scraping**: Uses Selenium + BeautifulSoup4 to extract raw data.
+2. **Analysis**: Python scripts process raw JSONs into ELO rankings with "Time-Decay" (recent matches weigh more) and goal margin multipliers.
+3. **Storage**: Raw data in `jsons/`, processed results in `frontend/public/` for Astro build consumption.
 
-- Always work from the **repo root** when running Python scripts.
-- Install Python dependencies once into a virtual environment:
+### Frontend Architecture
+- **Framework**: Astro 5 (Islands Architecture).
+- **Interactivity**: React 19 components (H2H comparisons, Leaderboards).
+- **Intelligence**: Integrated Gemini AI Chatbot for querying league stats.
+- **Multilingual**: Documentation follows a bilingual structure (`README.md` for Spanish, `README_EN.md` for English).
+
+---
+
+## Dev Environment Setup
+
+### 1. Python Backend
+- Always run scripts from the **repo root**.
+- **Virtual Environment**:
   ```bash
   python -m venv .venv
-  source .venv/Scripts/activate   
-  # Windows: .venv\Scripts\activate
+  source .venv/Scripts/activate  # Windows: .venv\Scripts\activate
   pip install -r requirements.txt
   ```
-- The scraping step requires **Google Chrome** installed locally (Selenium uses it via ChromeDriver).
-- Data files live in `jsons/`; ELO output files are written to `frontend/public/` so the Astro build can consume them.
+- **Requirements**: Google Chrome must be installed for Selenium (Headless mode).
 
-### Frontend
-
-- All `npm` commands must be run from the `frontend/` directory:
+### 2. Astro Frontend
+- All commands must be run from the `frontend/` directory:
   ```bash
   cd frontend
-  npm install      # first time only
-  npm run dev      # start local dev server (Astro)
+  npm install
+  npm run dev      # Start dev server
   ```
-- The frontend fetches JSON data at build-time from GitHub for SSG; however, for local development, it uses the files in `frontend/public/`.
-- The Astro config (`frontend/astro.config.mjs`) manages the React integration and base paths.
+- **Local Data**: The frontend uses JSON files in `frontend/public/` for local development.
 
 ---
 
-## Repository structure
+## Repository Structure
 
-```
+```text
 MiniFootballLeagueAnalyzer/
-├── .github/
-│   └── workflows/
-│       └── scraping.yml    # Runs scraping + ELO analysis daily at 02:00 UTC
-├── jsons/                  # Raw match/standings data (one JSON per competition)
-│   ├── classification/     # Scraped real points for rank comparison
-│   ├── prim_div_mur.json
-│   ├── seg_div_murA.json
-│   ├── seg_div_murB.json
-│   ├── ter_div_murA.json
-│   ├── ter_div_murB.json
-│   └── cuar_div_mur.json
-├── frontend/               # Astro + React (Islands Architecture)
-│   ├── public/             # Static assets + generated JSON consumed during build
-│   ├── src/
-│   │   ├── assets/         # Processed images and logos
-│   │   ├── components/     # Interactive React components (islands)
-│   │   │   └── Home/
-│   │   │       ├── Home.jsx
-│   │   │       └── Home.css
-│   │   ├── layouts/        # Astro layouts
-│   │   │   └── Layout.astro
-│   │   └── pages/          # Astro pages (routes)
-│   │       └── index.astro
-│   ├── package.json
-│   ├── astro.config.mjs
-│   └── tsconfig.json       # Astro/React TS config
-├── vercel.json             # Vercel deployment configuration
-├── league_scraping.py      # Selenium + BeautifulSoup scraper
-├── elo_system.py           # ELO calculation logic
-├── simulacion_final.py     # Runs ELO pipeline, writes output JSONs
-├── requirements.txt        # Python dependencies
-└── README.md
+├── .github/workflows/
+│   └── scraping.yml       # Daily scraper (02:00 UTC)
+├── jsons/                 # Raw data (Inputs)
+├── frontend/              # Web application
+│   ├── public/            # Processed JSONs (Outputs)
+│   ├── src/               # React Islands & Astro pages
+│   ├── vercel.json        # Vercel deployment config
+│   ├── README.md          # Frontend docs (Spanish)
+│   └── README_EN.md       # Frontend docs (English)
+├── league_scraping.py     # Scraper logic
+├── elo_system.py          # ELO algorithm
+├── simulacion_final.py    # Main execution script
+├── requirements.txt       # Python dependencies
+├── README.md              # Main docs (Spanish)
+└── README_EN.md           # Main docs (English)
 ```
 
 ---
 
-## Running the data pipeline locally
+## CI / CD Details
 
+| Tool | Event | Responsibility |
+|------|-------|----------------|
+| **GitHub Actions** | Daily (02:00 UTC) | Runs scraping, updates ELO, and pushes commits. |
+| **Vercel** | Push to `main` | Re-builds the static site with the latest data. |
+
+> [!IMPORTANT]
+> **GitHub Secrets**: The automated workflow requires a Personal Access Token (`GH_PAT`) in secrets to bypass the default GitHub Actions restrictions. This ensures that automated commits trigger the Vercel deployment and other checkmarks.
+
+---
+
+## Useful Commands
+
+### Local Data Refresh
 ```bash
-# 1. Scrape fresh data from the web
+# From root directory
 python league_scraping.py
-
-# 2. Compute ELO rankings and write output JSONs to frontend/public/
 python simulacion_final.py
 ```
 
-Run these in order from the repo root. After step 2 the frontend has up-to-date data for the next build.
+### Frontend Build
+```bash
+# From frontend directory
+npm run build     # Generate static dist/
+npm run preview   # Preview production build
+```
 
 ---
 
-## Frontend scripts
-
-Run all of the following from the `frontend/` directory:
-
-| Command | Purpose |
-|---------|---------|
-| `npm run dev` | Start local Astro dev server |
-| `npm run build` | Build static production site to `frontend/dist/` |
-| `npm run preview` | Preview the production build locally |
-| `npm run lint` | Run ESLint |
-
----
-
-## CI / GitHub Actions / Vercel
-
-| Tool | Trigger | What it does |
-|----------|---------|--------------|
-| **GitHub Actions** | Daily at 02:00 UTC | Scrapes data, runs ELO, and commits JSONs back to `main`. |
-| **Vercel** | Push to `main` | Detects changes, runs `npm run build` in `frontend/`, and deploys the static site. |
-
-
----
