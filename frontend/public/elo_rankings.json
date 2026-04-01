@@ -813,10 +813,10 @@
         {
             "posicion": 5,
             "equipo": "Granada Orígen",
-            "puntos": 1504,
+            "puntos": 1503,
             "puntos_reales": 13,
             "posicion_real": 5,
-            "tendencia": 26,
+            "tendencia": 25,
             "logo": "/images/teams/a3885a8c035298acae63f3b95f984e51.png",
             "evolucion": [
                 1500,
@@ -828,7 +828,7 @@
                 1456,
                 1485,
                 1504,
-                1504
+                1503
             ]
         },
         {
@@ -855,10 +855,10 @@
         {
             "posicion": 7,
             "equipo": "Ultimate Granada",
-            "puntos": 1468,
+            "puntos": 1470,
             "puntos_reales": 13,
             "posicion_real": 6,
-            "tendencia": -72,
+            "tendencia": -70,
             "logo": "/images/teams/a37e10b804d427702ddba5ea5b2e1952.png",
             "evolucion": [
                 1500,
@@ -870,7 +870,7 @@
                 1520,
                 1496,
                 1468,
-                1468
+                1470
             ]
         },
         {

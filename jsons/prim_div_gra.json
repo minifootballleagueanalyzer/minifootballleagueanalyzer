@@ -361,6 +361,15 @@
     },
     {
         "jornada": 9,
+        "equipo_local": "Granada Orígen",
+        "escudo_local": "/images/teams/a3885a8c035298acae63f3b95f984e51.png",
+        "equipo_visitante": "Ultimate Granada",
+        "escudo_visitante": "/images/teams/a37e10b804d427702ddba5ea5b2e1952.png",
+        "goles_local": 3,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 9,
         "equipo_local": "Ud Figares",
         "escudo_local": "/images/teams/b323648c7fcdfea57dc53880f73dfad1.png",
         "equipo_visitante": "Nazarí Rentahoy",
