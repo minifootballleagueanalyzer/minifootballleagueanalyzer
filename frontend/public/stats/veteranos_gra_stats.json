@@ -48,6 +48,12 @@
         "avatar": "/images/players/1adc5acb4902f5fa7dc779be25734624.jpg"
     },
     {
+        "nombre": "** Miguel Pérez Domínguez",
+        "equipo": "Ogijares 89 Fc",
+        "goles": 6,
+        "avatar": "/images/players/dac403002ae8c7c22f1f3ba52e65690a.png"
+    },
+    {
         "nombre": "José Fernández Cantarero",
         "equipo": "Monachil",
         "goles": 5,
@@ -58,12 +64,6 @@
         "equipo": "Churriana",
         "goles": 5,
         "avatar": "/images/players/390e24d22fdfa29903965d724284e41e.jpg"
-    },
-    {
-        "nombre": "** Miguel Pérez Domínguez",
-        "equipo": "Ogijares 89 Fc",
-        "goles": 5,
-        "avatar": "/images/players/dac403002ae8c7c22f1f3ba52e65690a.png"
     },
     {
         "nombre": "Manuel Pérez Malagón",
@@ -102,6 +102,18 @@
         "avatar": "/images/players/180cc9339eeefe8d659175f2c6ded282.png"
     },
     {
+        "nombre": "Manuel Cuadros Roldán",
+        "equipo": "Otura",
+        "goles": 4,
+        "avatar": "/images/players/db75b0af2664aa97084aded477376eb9.png"
+    },
+    {
+        "nombre": "Daniel González Benítez",
+        "equipo": "Ogijares 89 Fc",
+        "goles": 3,
+        "avatar": "/images/players/e51bc883abd47fca2bedaa99f7c3df02.png"
+    },
+    {
         "nombre": "Oscar García Guerrero",
         "equipo": "Atlético La Zubia",
         "goles": 3,
@@ -112,12 +124,6 @@
         "equipo": "Churriana",
         "goles": 3,
         "avatar": "/images/players/31231a2116abab1969c02e21c1ebe7ea.jpg"
-    },
-    {
-        "nombre": "** Rubén Cuadros Criado",
-        "equipo": "Ogijares 89 Fc",
-        "goles": 3,
-        "avatar": "/images/players/b8084c622c6a7a20345f58775baf5672.png"
     },
     {
         "nombre": "Angel Molinero Rivas",
@@ -138,6 +144,12 @@
         "avatar": "/images/players/9f9745277e1c996d520366a28c0a465e.png"
     },
     {
+        "nombre": "** Rubén Cuadros Criado",
+        "equipo": "Ogijares 89 Fc",
+        "goles": 3,
+        "avatar": "/images/players/b8084c622c6a7a20345f58775baf5672.png"
+    },
+    {
         "nombre": "Pedro Adróver Pérez",
         "equipo": "Ogijares 89 Fc",
         "goles": 3,
@@ -154,12 +166,6 @@
         "equipo": "Atlético La Zubia",
         "goles": 3,
         "avatar": "/images/players/b9a57f9ae91ae334344b9e35d8df3626.jpg"
-    },
-    {
-        "nombre": "Jorge Romero Rodríguez",
-        "equipo": "Ogijares 89 Fc",
-        "goles": 3,
-        "avatar": "/images/players/72c3c1c560edee3f614567e051c06c7b.jpg"
     },
     {
         "nombre": "Jose Maria Siles Agudo",
@@ -186,10 +192,22 @@
         "avatar": "/images/players/20661e2fe6d07175865313497a51a329.jpg"
     },
     {
+        "nombre": "Jorge Romero Rodríguez",
+        "equipo": "Ogijares 89 Fc",
+        "goles": 3,
+        "avatar": "/images/players/72c3c1c560edee3f614567e051c06c7b.jpg"
+    },
+    {
         "nombre": "Francisco Javier  Cardenete Garcia",
         "equipo": "Peña Fútbol Villanueva Mesia",
         "goles": 3,
         "avatar": "/images/players/4859d024215657481e78e109c32f31b9.jpg"
+    },
+    {
+        "nombre": "Antonio \"Luján\" Fernández Hervás",
+        "equipo": "Ogijares 89 Fc",
+        "goles": 3,
+        "avatar": "/images/players/8d22989ad0cfe6b91a3e6547ff5baa76.jpg"
     },
     {
         "nombre": "Manuel Gamiz Matas",
@@ -216,22 +234,16 @@
         "avatar": "/images/players/180cc9339eeefe8d659175f2c6ded282.png"
     },
     {
-        "nombre": "Elías Prieto Crespo",
-        "equipo": "Otura",
-        "goles": 2,
-        "avatar": "/images/players/665799dfb2d1ed7ee33f0bd62aa5702d.jpg"
-    },
-    {
         "nombre": "Jose Manuel Morales Solera",
         "equipo": "Churriana",
         "goles": 2,
         "avatar": "/images/players/9fee5463132037f6b79d6e085dbd3936.png"
     },
     {
-        "nombre": "José Manuel López Ruiz",
+        "nombre": "Elías Prieto Crespo",
         "equipo": "Otura",
         "goles": 2,
-        "avatar": "/images/players/db75b0af2664aa97084aded477376eb9.png"
+        "avatar": "/images/players/665799dfb2d1ed7ee33f0bd62aa5702d.jpg"
     },
     {
         "nombre": "Alberto Jiménez Carrasco",
@@ -246,10 +258,16 @@
         "avatar": "/images/players/330708b7ae3b5b7d4517de66f6bf778d.jpg"
     },
     {
-        "nombre": "Manuel Cuadros Roldán",
+        "nombre": "José Manuel López Ruiz",
         "equipo": "Otura",
         "goles": 2,
         "avatar": "/images/players/db75b0af2664aa97084aded477376eb9.png"
+    },
+    {
+        "nombre": "Antonio Jesús García García",
+        "equipo": "Otura",
+        "goles": 2,
+        "avatar": "/images/players/21d88acc1e37c90a1d9d7d1b4d4d1eb2.jpg"
     },
     {
         "nombre": "Enrique  Fernández López",
@@ -282,22 +300,10 @@
         "avatar": "/images/players/c73df4431c21f84f8e906d43c9e48d15.jpg"
     },
     {
-        "nombre": "Antonio \"Luján\" Fernández Hervás",
-        "equipo": "Ogijares 89 Fc",
-        "goles": 2,
-        "avatar": "/images/players/8d22989ad0cfe6b91a3e6547ff5baa76.jpg"
-    },
-    {
         "nombre": "Enrique Osuna López",
         "equipo": "Churriana",
         "goles": 1,
         "avatar": "/images/players/675a653457303158209ecb60b262c529.png"
-    },
-    {
-        "nombre": "Daniel González Benítez",
-        "equipo": "Ogijares 89 Fc",
-        "goles": 1,
-        "avatar": "/images/players/e51bc883abd47fca2bedaa99f7c3df02.png"
     },
     {
         "nombre": "** Adrián  Tenorio Rodríguez",
@@ -366,12 +372,6 @@
         "avatar": "/images/players/675a653457303158209ecb60b262c529.png"
     },
     {
-        "nombre": "Francisco Javier Morente Guzmán",
-        "equipo": "Otura",
-        "goles": 1,
-        "avatar": "/images/players/8513a87cd04d9e23050b7e5e0e36be9f.png"
-    },
-    {
         "nombre": "Manuel Fernandez Puente",
         "equipo": "Celtic Pulianas",
         "goles": 1,
@@ -388,18 +388,6 @@
         "equipo": "Otura",
         "goles": 1,
         "avatar": "/images/players/675a653457303158209ecb60b262c529.png"
-    },
-    {
-        "nombre": "José Ángel Carmona Sánchez",
-        "equipo": "Otura",
-        "goles": 1,
-        "avatar": "/images/players/0a0feae48944dd03b91ebea5e355fa8a.jpg"
-    },
-    {
-        "nombre": "Antonio Jesús García García",
-        "equipo": "Otura",
-        "goles": 1,
-        "avatar": "/images/players/21d88acc1e37c90a1d9d7d1b4d4d1eb2.jpg"
     },
     {
         "nombre": "Gonzalo Medina Talero",
@@ -420,6 +408,12 @@
         "avatar": "/images/players/180cc9339eeefe8d659175f2c6ded282.png"
     },
     {
+        "nombre": "Francisco Javier Morente Guzmán",
+        "equipo": "Otura",
+        "goles": 1,
+        "avatar": "/images/players/8513a87cd04d9e23050b7e5e0e36be9f.png"
+    },
+    {
         "nombre": "** Sergio Guerrero de la Camara",
         "equipo": "Celtic Pulianas",
         "goles": 1,
@@ -438,10 +432,10 @@
         "avatar": "/images/players/ce32131e4fc7b925cefa4df3e9529ce2.png"
     },
     {
-        "nombre": "Isaac Úbeda Fernández",
+        "nombre": "José Ángel Carmona Sánchez",
         "equipo": "Otura",
         "goles": 1,
-        "avatar": "/images/players/dbd18390cda2868625b403ccb1920e53.png"
+        "avatar": "/images/players/0a0feae48944dd03b91ebea5e355fa8a.jpg"
     },
     {
         "nombre": "** Miguel Angel Fajardo Aguado",
@@ -456,16 +450,10 @@
         "avatar": "/images/players/8a1697bb47cf33959f39fa29387affd3.jpg"
     },
     {
-        "nombre": "Jose Antonio \"Ñoño\" Jiménez Muñoz",
-        "equipo": "Ogijares 89 Fc",
+        "nombre": "Isaac Úbeda Fernández",
+        "equipo": "Otura",
         "goles": 1,
-        "avatar": "/images/players/17f29546fd17b5ecb56adb50be12a41b.jpg"
-    },
-    {
-        "nombre": "Pablo Lorente Lavado",
-        "equipo": "Ogijares 89 Fc",
-        "goles": 1,
-        "avatar": "/images/players/03eb87ad161bcbf837e75a9df6682a10.jpg"
+        "avatar": "/images/players/dbd18390cda2868625b403ccb1920e53.png"
     },
     {
         "nombre": "Juan Gallego Martín",
@@ -480,6 +468,12 @@
         "avatar": "/images/players/675a653457303158209ecb60b262c529.png"
     },
     {
+        "nombre": "Jose Antonio \"Ñoño\" Jiménez Muñoz",
+        "equipo": "Ogijares 89 Fc",
+        "goles": 1,
+        "avatar": "/images/players/17f29546fd17b5ecb56adb50be12a41b.jpg"
+    },
+    {
         "nombre": "Rafael Lopez Medina",
         "equipo": "Celtic Pulianas",
         "goles": 1,
@@ -490,6 +484,12 @@
         "equipo": "Peña Fútbol Villanueva Mesia",
         "goles": 1,
         "avatar": "/images/players/5df680620da37612493d0b8e8e75cd96.jpg"
+    },
+    {
+        "nombre": "Pablo Lorente Lavado",
+        "equipo": "Ogijares 89 Fc",
+        "goles": 1,
+        "avatar": "/images/players/03eb87ad161bcbf837e75a9df6682a10.jpg"
     },
     {
         "nombre": "Jesus  Vargas Dali",

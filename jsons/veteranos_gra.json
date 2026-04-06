@@ -288,6 +288,15 @@
         "goles_visitante": 3
     },
     {
+        "jornada": 9,
+        "equipo_local": "Ogijares 89 Fc",
+        "escudo_local": "/images/teams/8e8ffdddc6fb20de03f043bd69a31320.jpg",
+        "equipo_visitante": "Otura",
+        "escudo_visitante": "/images/teams/df9b1ba766388066146d8e9045970673.jpg",
+        "goles_local": 4,
+        "goles_visitante": 3
+    },
+    {
         "jornada": 10,
         "equipo_local": "Atlético La Zubia",
         "escudo_local": "/images/teams/f4712bb148ff0fa5899a9a6ca2affa8e.jpg",
