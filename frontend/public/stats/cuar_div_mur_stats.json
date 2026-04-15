@@ -15,7 +15,7 @@
         "nombre": "Ricardo  Bastidas Alcivar",
         "equipo": "Ultimate City",
         "goles": 13,
-        "avatar": "/images/players/54eeb844f7a8e9c27db62502ac331d90.jpg"
+        "avatar": "/images/players/aa4f911a5cdbffcd40d2baa11677da68.jpg"
     },
     {
         "nombre": "Antonio    CASCALES MARTINEZ",
@@ -27,7 +27,7 @@
         "nombre": "Jordi    Uroz NGuessan",
         "equipo": "Junta Fc",
         "goles": 11,
-        "avatar": "/images/players/db90647b1ea867e8a860e9da93519fb8.jpg"
+        "avatar": "/images/players/c3bc5bb036501cdcdf4921f337fc6e24.jpg"
     },
     {
         "nombre": "Cristóbal Martínez Cermeño",
@@ -57,13 +57,13 @@
         "nombre": "Javier López Sánchez",
         "equipo": "Victory Road",
         "goles": 6,
-        "avatar": "/images/players/56090ee756c113d6804e374c3f28e43b.jpg"
+        "avatar": "/images/players/b78ee7e705688f60975eca35450d3387.jpg"
     },
     {
         "nombre": "Diego  Martínez Sánchez",
         "equipo": "Los Ramos",
         "goles": 6,
-        "avatar": "/images/players/7072e042c95cd6f29ea6276da02cc769.jpg"
+        "avatar": "/images/players/6b415153d08f9d6efc96bc65bf1d4d5f.jpg"
     },
     {
         "nombre": "Alvaro Hernández Hernández",
@@ -99,13 +99,13 @@
         "nombre": "José Lorca Ramón",
         "equipo": "Junta Fc",
         "goles": 6,
-        "avatar": "/images/players/65b4b7ca1d607facc3ee4466b3523f83.jpg"
+        "avatar": "/images/players/89b9560f3a8edc0f98e9c1b6c93f91e5.jpg"
     },
     {
         "nombre": "Juan Manuel Castejón López",
         "equipo": "Fc Esparragal",
         "goles": 5,
-        "avatar": "/images/players/b0e60864232c558db7524fdb44f8d31e.jpg"
+        "avatar": "/images/players/613ab3fe3ad3b3421a6aa416c643d7f5.jpg"
     },
     {
         "nombre": "Jose Miguel  Ruiz Vera",
@@ -135,13 +135,13 @@
         "nombre": "Adrián Martínez  Manzano",
         "equipo": "Junta Fc",
         "goles": 5,
-        "avatar": "/images/players/1f8cf9b0f9ef232679a6b85cff0c6ff8.jpg"
+        "avatar": "/images/players/4db77190e58f7f751fc796e2bd9ed53b.jpg"
     },
     {
         "nombre": "Jesus Leal Garcia",
         "equipo": "Charca",
         "goles": 4,
-        "avatar": "/images/players/f88f3bfca06f744093b3ff2345b8db59.jpg"
+        "avatar": "/images/players/51b8567611e9d528a1b6605f21cc3ff8.jpg"
     },
     {
         "nombre": "Bernardo  Barceló Melgarejo",
@@ -153,13 +153,13 @@
         "nombre": "José  Hidalgo Lucas",
         "equipo": "Iluminaos Fc",
         "goles": 4,
-        "avatar": "/images/players/ac94593f67191a39a18db6681051036a.jpg"
+        "avatar": "/images/players/d8c01c1e9f2011caad7e980a03dff92f.jpg"
     },
     {
         "nombre": "Juan Beltrán Gil",
         "equipo": "Nottingham Miedo",
         "goles": 4,
-        "avatar": "/images/players/0275c179a886549719b05eac671547d4.jpg"
+        "avatar": "/images/players/396c99895208f7604a9832f70ab8f525.jpg"
     },
     {
         "nombre": "Ruben  Martinez Hernandez",
@@ -171,13 +171,13 @@
         "nombre": "Dylan Bejarano Hoyos",
         "equipo": "Junta Fc",
         "goles": 4,
-        "avatar": "/images/players/3e4dc0ea595ef99e01c9b9431e6de1cb.jpg"
+        "avatar": "/images/players/a8b465a43b38638a4c588afa3b6afd24.jpg"
     },
     {
         "nombre": "Jorge Fernández Zaragoza",
         "equipo": "Real Suciedad",
         "goles": 4,
-        "avatar": "/images/players/eb59565573b99047718721c37ab39a41.jpg"
+        "avatar": "/images/players/88075c0fbe2034f129fc487567575ac6.jpg"
     },
     {
         "nombre": "Javier  Martínez González",
@@ -219,7 +219,7 @@
         "nombre": "Andrés Moreno Nicolás",
         "equipo": "Victory Road",
         "goles": 3,
-        "avatar": "/images/players/c8e396124d5858bae4fcbd876a3b3bc1.jpg"
+        "avatar": "/images/players/e2e977c76d51c7ad8dd6a9cd70d2e86e.jpg"
     },
     {
         "nombre": "Marco Cascales Lozano",
@@ -249,19 +249,19 @@
         "nombre": "Paco  Sánchez Peñalver",
         "equipo": "Real Suciedad",
         "goles": 3,
-        "avatar": "/images/players/ed7402ff933146ab3b10aff5156aafa2.png"
+        "avatar": "/images/players/b32a2337b20b21e719c2afe1614a816b.png"
     },
     {
         "nombre": "Jaime Carreto Sánchez",
         "equipo": "Nottingham Miedo",
         "goles": 3,
-        "avatar": "/images/players/6fa4960b0cca23e5300bc00e320b9fb9.jpg"
+        "avatar": "/images/players/68057b2a7f36249fd7f0f2f1f82e315a.jpg"
     },
     {
         "nombre": "Sergio Martínez Martínez",
         "equipo": "Victory Road",
         "goles": 3,
-        "avatar": "/images/players/3ef0a36f30c432cd3804514664a352bb.jpg"
+        "avatar": "/images/players/434a97e1ce26d815b2982b158db2aade.jpg"
     },
     {
         "nombre": "Tomás Sánchez Revelles",
@@ -273,13 +273,13 @@
         "nombre": "Adrian  Leal Griñan",
         "equipo": "Los Ramos",
         "goles": 3,
-        "avatar": "/images/players/faf3768cd01bde8b65d3e9c2413277c0.jpg"
+        "avatar": "/images/players/f7f3fca32778b73601d9c8fc14a1d105.jpg"
     },
     {
         "nombre": "Cesar García Avilés",
         "equipo": "Fc Esparragal",
         "goles": 3,
-        "avatar": "/images/players/2ccbeeacaa235311d376577a586a7b28.jpg"
+        "avatar": "/images/players/70330c8fb216bae70385b9cdb8eac12f.jpg"
     },
     {
         "nombre": "Hugo Desiderio García",
@@ -291,13 +291,13 @@
         "nombre": "Pablo Nicolás Gutiérrez",
         "equipo": "Los Ramos",
         "goles": 3,
-        "avatar": "/images/players/d95e7c0e740a9a05d4af9a52fc7a8c91.jpg"
+        "avatar": "/images/players/0a86e2f88b2597ffd95a9ea52e21edf1.jpg"
     },
     {
         "nombre": "Carlos Antonio Sánchez Yunga",
         "equipo": "Junta Fc",
         "goles": 3,
-        "avatar": "/images/players/f55c5f624e542e284f211e98f0bbd81c.jpg"
+        "avatar": "/images/players/b174114589078c68b0c2dce89358b4fb.jpg"
     },
     {
         "nombre": "Aitor  Hurtado Pedrosa",
@@ -309,7 +309,7 @@
         "nombre": "Álvaro  López Buendía",
         "equipo": "Los Ramos",
         "goles": 2,
-        "avatar": "/images/players/2e945c0aa538cbe308ae2c5a1c300e0f.jpg"
+        "avatar": "/images/players/9fd80a77b1a742f8dd11166fd1a113db.jpg"
     },
     {
         "nombre": "Javier Montiel Cárceles",
@@ -345,7 +345,7 @@
         "nombre": "Ángel Albaladejo Ruiz",
         "equipo": "Junta Fc",
         "goles": 2,
-        "avatar": "/images/players/ff21013ace31d0f42d9fe24eededf74f.jpg"
+        "avatar": "/images/players/94a84e108ad13c87a5db888ae956284d.jpg"
     },
     {
         "nombre": "Arturo López Belando",
@@ -357,19 +357,19 @@
         "nombre": "Samuel Moreno Párraga",
         "equipo": "Victory Road",
         "goles": 2,
-        "avatar": "/images/players/5921267df11c438caa96fa064d30a1d4.jpg"
+        "avatar": "/images/players/56104a7e6a5f824d8c7b6e4d9121f7e3.jpg"
     },
     {
         "nombre": "Jose Párraga Alonso",
         "equipo": "Victory Road",
         "goles": 2,
-        "avatar": "/images/players/bde365eb5a08c3f243d8e45279810d39.jpg"
+        "avatar": "/images/players/d2ea92867a6157107cb694bc99abcc1e.jpg"
     },
     {
         "nombre": "Antonio  Javaloy Martínez",
         "equipo": "Junta Fc",
         "goles": 2,
-        "avatar": "/images/players/24a6be8d6592dde6005b16d8bf7fc304.jpg"
+        "avatar": "/images/players/13cbff8226f18a29961e9ebf2686f5c7.jpg"
     },
     {
         "nombre": "Arturo Campos Ortega",
@@ -423,7 +423,7 @@
         "nombre": "Erick Ricardo Robles Durán",
         "equipo": "Los Ramos",
         "goles": 1,
-        "avatar": "/images/players/212e2e75523eba4a7193dedf1d958bbb.jpg"
+        "avatar": "/images/players/d8e8bfb31b9550e69a38fa2d0814b948.jpg"
     },
     {
         "nombre": "Amin Mahir El Bouhali",
@@ -453,7 +453,7 @@
         "nombre": "Aaron Sánchez Martínez",
         "equipo": "Los Ramos",
         "goles": 1,
-        "avatar": "/images/players/d9a365e959bab9a125d3450d1b5d00aa.jpg"
+        "avatar": "/images/players/000e3e99a77e61e1027602ad9c8097b8.jpg"
     },
     {
         "nombre": "Abdelilah El Guenfoud Metnani",
@@ -477,19 +477,19 @@
         "nombre": "Francisco Javier García Caravaca",
         "equipo": "Nottingham Miedo",
         "goles": 1,
-        "avatar": "/images/players/453c91a027454f4eecb85641c3800eb7.jpg"
+        "avatar": "/images/players/70b4405fccac5b2412485322d5cec680.jpg"
     },
     {
         "nombre": "Raúl Pérez Párraga",
         "equipo": "Victory Road",
         "goles": 1,
-        "avatar": "/images/players/c667554cfe4a2f1b61d8a22b1ce53a25.jpg"
+        "avatar": "/images/players/eef40020f7dadd8a3f151576edfd472e.jpg"
     },
     {
         "nombre": "Adrián Martínez Martinez",
         "equipo": "Victory Road",
         "goles": 1,
-        "avatar": "/images/players/98fa30a8a607da1db7cd0245ed8f9231.jpg"
+        "avatar": "/images/players/2e89651e063f4ebb82c8ac7735fa06c9.jpg"
     },
     {
         "nombre": "Mariano Alcázar Martinez",
@@ -513,7 +513,7 @@
         "nombre": "Izan Pardo Aroca",
         "equipo": "Iluminaos Fc",
         "goles": 1,
-        "avatar": "/images/players/a39717c91879986e6b085a74aa91f5ae.jpg"
+        "avatar": "/images/players/2a508bffdaf89dfdb31e39750a0efa66.jpg"
     },
     {
         "nombre": "Jesús Vivancos López",

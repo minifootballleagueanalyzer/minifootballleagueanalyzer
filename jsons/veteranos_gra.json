@@ -349,5 +349,23 @@
         "escudo_visitante": "/images/teams/c12cc8da728366201f567281aa2eb2c6.png",
         "goles_local": 0,
         "goles_visitante": 7
+    },
+    {
+        "jornada": 11,
+        "equipo_local": "Ogijares 89 Fc",
+        "escudo_local": "/images/teams/8e8ffdddc6fb20de03f043bd69a31320.jpg",
+        "equipo_visitante": "Churriana",
+        "escudo_visitante": "/images/teams/23871283e20d7d8cc0d7ea7212e3b3c3.jpg",
+        "goles_local": 2,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 12,
+        "equipo_local": "Otura",
+        "escudo_local": "/images/teams/df9b1ba766388066146d8e9045970673.jpg",
+        "equipo_visitante": "Monachil",
+        "escudo_visitante": "/images/teams/c12cc8da728366201f567281aa2eb2c6.png",
+        "goles_local": 0,
+        "goles_visitante": 3
     }
 ]
