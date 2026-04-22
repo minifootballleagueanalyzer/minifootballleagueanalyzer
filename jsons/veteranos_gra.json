@@ -367,5 +367,32 @@
         "escudo_visitante": "/images/teams/c12cc8da728366201f567281aa2eb2c6.png",
         "goles_local": 0,
         "goles_visitante": 3
+    },
+    {
+        "jornada": 12,
+        "equipo_local": "Atlético La Zubia",
+        "escudo_local": "/images/teams/f4712bb148ff0fa5899a9a6ca2affa8e.jpg",
+        "equipo_visitante": "Joanfran Albolote",
+        "escudo_visitante": "/images/teams/94c40425753b096940655d9207eb524e.jpg",
+        "goles_local": 3,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 12,
+        "equipo_local": "Churriana",
+        "escudo_local": "/images/teams/23871283e20d7d8cc0d7ea7212e3b3c3.jpg",
+        "equipo_visitante": "Celtic Pulianas",
+        "escudo_visitante": "/images/teams/c101d95e9bf9072a5981423ca6f7443b.jpg",
+        "goles_local": 3,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 12,
+        "equipo_local": "Ogijares 89 Fc",
+        "escudo_local": "/images/teams/8e8ffdddc6fb20de03f043bd69a31320.jpg",
+        "equipo_visitante": "Peña Fútbol Villanueva Mesia",
+        "escudo_visitante": "/images/teams/fdcedd579e7c37e3638f1a130a62530e.png",
+        "goles_local": 7,
+        "goles_visitante": 4
     }
 ]

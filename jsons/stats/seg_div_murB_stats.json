@@ -3,7 +3,7 @@
         "nombre": "Juan Jiménez Belda",
         "equipo": "Los Trakas",
         "goles": 16,
-        "avatar": "/images/players/69ebd80c2aacc0525b8b0fde47506e74.jpg"
+        "avatar": "/images/players/04bfa25fba4ca11684c825eed444e1a3.jpg"
     },
     {
         "nombre": "Tihomir Arkadiev Metodiev",
@@ -21,7 +21,7 @@
         "nombre": "Elías Ezequiel Aquino Gómez",
         "equipo": "Niupi",
         "goles": 10,
-        "avatar": "/images/players/271a694a0733f458b820e33c1aff9b3f.jpg"
+        "avatar": "/images/players/6e8201bab6e32702ef27277dc8ba3a62.jpg"
     },
     {
         "nombre": "Paco Marín Martínez",
@@ -45,7 +45,7 @@
         "nombre": "Daniel García Bañón",
         "equipo": "Los Trakas",
         "goles": 8,
-        "avatar": "/images/players/c7e8df2849da62ac1bc11088e97a78c5.jpg"
+        "avatar": "/images/players/536ec89febd44e59eef7d428f7f21720.jpg"
     },
     {
         "nombre": "Alejandro García Bañon",
@@ -69,7 +69,7 @@
         "nombre": "Dimitar Stoyanov Azmanov",
         "equipo": "Distrito Internazionale  Fc",
         "goles": 6,
-        "avatar": "/images/players/043863244c336b277b5e845250c27bf4.jpg"
+        "avatar": "/images/players/eb88b42783d0d74f9807964a2c1090f2.jpg"
     },
     {
         "nombre": "ALEJANDRO GARCIA GARCIA",
@@ -87,7 +87,7 @@
         "nombre": "Dmytro Polivoda",
         "equipo": "Patriot",
         "goles": 6,
-        "avatar": "/images/players/205495ca126bb0a943379818f6a48b3a.jpg"
+        "avatar": "/images/players/7dd5d34b53111e992d9dce6a877a2efb.jpg"
     },
     {
         "nombre": "Guillermo  Llamas Berenguer",
@@ -99,7 +99,7 @@
         "nombre": "Javier Diaz Uclés",
         "equipo": "Niupi",
         "goles": 6,
-        "avatar": "/images/players/62d005fc00f67d01aeb2f512fed55dc7.jpg"
+        "avatar": "/images/players/20d316798880db5f73fed05a35749c6a.jpg"
     },
     {
         "nombre": "Daniel Martín Muñoz",
@@ -123,7 +123,7 @@
         "nombre": "Víctor Manchado García",
         "equipo": "Blackout Fc",
         "goles": 5,
-        "avatar": "/images/players/f253eb42f9c43b424a382af19d5121bd.jpg"
+        "avatar": "/images/players/0a3bca82eec7775d110d21209165f597.jpg"
     },
     {
         "nombre": "Alberto  Mora Coll",
@@ -135,7 +135,7 @@
         "nombre": "Nazar Babyak",
         "equipo": "Patriot",
         "goles": 5,
-        "avatar": "/images/players/5cfa473d424c089ffea633421658f46a.jpg"
+        "avatar": "/images/players/7abc8c206b3ae6391c6d326564993e2e.jpg"
     },
     {
         "nombre": "Alberto Carpena Bañon",
@@ -165,7 +165,7 @@
         "nombre": "Sergio Mercader Bernal",
         "equipo": "Distrito Internazionale  Fc",
         "goles": 4,
-        "avatar": "/images/players/333a3be5f05e88d424c757f5776ecb8b.jpg"
+        "avatar": "/images/players/236053bd93f43a500b7ab134264d2e85.jpg"
     },
     {
         "nombre": "Nika Kapanadze",
@@ -201,7 +201,7 @@
         "nombre": "Hugo Becerril Palomar",
         "equipo": "Blackout Fc",
         "goles": 4,
-        "avatar": "/images/players/7f51e85bb33c6c8db4469a117040e3c9.jpg"
+        "avatar": "/images/players/ce28b96f9864106efa2345770abf7637.jpg"
     },
     {
         "nombre": "LUIS FERNANDO JUSTINIANO APARICIO",
@@ -219,7 +219,7 @@
         "nombre": "Rodrigo Alonso Alfonso",
         "equipo": "Federicos Team",
         "goles": 3,
-        "avatar": "/images/players/b02a01c686e7eec56cc09d7fd5822497.jpg"
+        "avatar": "/images/players/dc76f9a4d4bd9e7675875e9a93c75b37.jpg"
     },
     {
         "nombre": "Hugo Vera Jara",
@@ -249,7 +249,7 @@
         "nombre": "Yaroslav Aliferets",
         "equipo": "Patriot",
         "goles": 3,
-        "avatar": "/images/players/0dbb5cf6872163acb79dc4bbde4456f2.jpg"
+        "avatar": "/images/players/f8ef6e03a25ca6f2e7a40e814a1ea4f7.jpg"
     },
     {
         "nombre": "Víctor Koval",
@@ -279,7 +279,7 @@
         "nombre": "Maksym Khylynskyi",
         "equipo": "Patriot",
         "goles": 3,
-        "avatar": "/images/players/190ecf0de12517c489b4c285b4c8edb4.jpg"
+        "avatar": "/images/players/376bf855731d80181397f4b8ab61aa07.jpg"
     },
     {
         "nombre": "Mykhailo Shchutiak",
@@ -333,7 +333,7 @@
         "nombre": "Aurelio Gomez Coll",
         "equipo": "Raal Murcia",
         "goles": 2,
-        "avatar": "/images/players/df90b0f2a7ea30b969b5be09c6d8a920.png"
+        "avatar": "/images/players/f0f1f633a4e57061ede78fb059d74ef6.png"
     },
     {
         "nombre": "Kike Longa Yagüe",
@@ -345,13 +345,13 @@
         "nombre": "José Javier Montoya López",
         "equipo": "Blackout Fc",
         "goles": 2,
-        "avatar": "/images/players/c540287349b0066d776c39f86d07d6b5.jpg"
+        "avatar": "/images/players/31f8b58b2773c0ac89bbda227d6bf5e7.jpg"
     },
     {
         "nombre": "Aaron Andrada Sanchez",
         "equipo": "Raal Murcia",
         "goles": 2,
-        "avatar": "/images/players/90b58aeb9becb9a02067b77cb46c3806.jpg"
+        "avatar": "/images/players/61ff9830c4f0f475ee5a4b122dc23f55.jpg"
     },
     {
         "nombre": "Eduardo Pinar Vidal-Abarca",
@@ -369,13 +369,13 @@
         "nombre": "Daniel Lorenzo Bolarín",
         "equipo": "Niupi",
         "goles": 2,
-        "avatar": "/images/players/a6a9eeec6090a868ad5949ded968a112.jpg"
+        "avatar": "/images/players/421df1025b997dcfb2c8b66ebe8af175.jpg"
     },
     {
         "nombre": "Samuel García Utrilla",
         "equipo": "Federicos Team",
         "goles": 2,
-        "avatar": "/images/players/052f0d4dcd0005f51f7a5847dd47e9dd.jpg"
+        "avatar": "/images/players/6d7ac4f02ac49b604de97d11b90e4336.jpg"
     },
     {
         "nombre": "Borja Pérez Pérez",
@@ -459,7 +459,7 @@
         "nombre": "Alejandro  Rosa Sánchez",
         "equipo": "Fc La Yanka",
         "goles": 1,
-        "avatar": "/images/players/5a88e2831d0e9fcd1ac56c8fe3b11527.jpg"
+        "avatar": "/images/players/612980d7f1631e3179a9d6576d9d9052.jpg"
     },
     {
         "nombre": "Jose Alberto Andreu Quiñones",
@@ -495,7 +495,7 @@
         "nombre": "Carlos Mora Ruiz",
         "equipo": "Fc La Yanka",
         "goles": 1,
-        "avatar": "/images/players/e4590d2741b1f34291e24c8362ce9e87.jpg"
+        "avatar": "/images/players/868e36f641ad7ef72368ffa126fd085d.jpg"
     },
     {
         "nombre": "Pedro López Gris",
@@ -531,13 +531,13 @@
         "nombre": "Daniel Moisés Ortíz Cajas",
         "equipo": "Sabomur Stars",
         "goles": 1,
-        "avatar": "/images/players/ed7402ff933146ab3b10aff5156aafa2.png"
+        "avatar": "/images/players/b32a2337b20b21e719c2afe1614a816b.png"
     },
     {
         "nombre": "PABLO  MOLINA DIAZ",
         "equipo": "Sabomur Stars",
         "goles": 1,
-        "avatar": "/images/players/f587381f337c92d570567d5a44ed22e3.png"
+        "avatar": "/images/players/c95515cb6c154c48ff1f8333e08f6dc7.png"
     },
     {
         "nombre": "Vitaliy Pyniak",
@@ -549,6 +549,6 @@
         "nombre": "Enrique  Fernández Muñoz",
         "equipo": "Los Trakas",
         "goles": 1,
-        "avatar": "/images/players/a1488805f9c915c30db4234311fe083d.jpg"
+        "avatar": "/images/players/b25be38b8b4fbdc632afdb740cb75ab0.jpg"
     }
 ]
