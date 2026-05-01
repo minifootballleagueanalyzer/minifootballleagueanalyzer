@@ -31,6 +31,7 @@ export default function ChatbotWidget() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
     {
+      id: 'initial',
       role: 'assistant',
       text: '¡Hola! Soy el analista de la MiniFootball League 🟢 Selecciona una pregunta para empezar.',
     },
@@ -48,7 +49,7 @@ export default function ChatbotWidget() {
   async function askQuestion(question) {
     if (loading) return;
 
-    setMessages((prev) => [...prev, { role: 'user', text: question }]);
+    setMessages((prev) => [...prev, { id: `u-${Date.now()}`, role: 'user', text: question }]);
     setLoading(true);
 
     try {
@@ -60,12 +61,12 @@ export default function ChatbotWidget() {
       const data = await res.json();
       setMessages((prev) => [
         ...prev,
-        { role: 'assistant', text: data.answer || data.error || 'Sin respuesta.' },
+        { id: `a-${Date.now()}`, role: 'assistant', text: data.answer || data.error || 'Sin respuesta.' },
       ]);
     } catch {
       setMessages((prev) => [
         ...prev,
-        { role: 'assistant', text: 'Error de conexión. Inténtalo de nuevo.' },
+        { id: `err-${Date.now()}`, role: 'assistant', text: 'Error de conexión. Inténtalo de nuevo.' },
       ]);
     } finally {
       setLoading(false);
@@ -76,6 +77,7 @@ export default function ChatbotWidget() {
     setActiveContext(null);
     setMessages([
       {
+        id: 'initial',
         role: 'assistant',
         text: '¡Hola! Soy el analista de la MiniFootball League 🟢 Selecciona una pregunta para empezar.',
       },
@@ -123,9 +125,9 @@ export default function ChatbotWidget() {
 
         {/* Mensajes */}
         <div className="chatbot-messages">
-          {messages.map((msg, i) => (
+          {messages.map((msg) => (
             <div
-              key={i}
+              key={msg.id}
               className={`chatbot-bubble chatbot-bubble--${msg.role}`}
             >
               {msg.text}

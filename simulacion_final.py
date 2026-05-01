@@ -195,4 +195,4 @@ if os.path.exists(ruta_stats_source):
 
 
 # Muestro un mensaje final indicando al usuario que todo el proceso ha terminado con éxito
-print(f"\n¡Todos los rankings calculados y exportados!")
+print("\n¡Todos los rankings calculados y exportados!")

@@ -20,7 +20,7 @@ The frontend uses a **Static Site Generation (SSG)** model with **Partial Hydrat
 
 1. **Build Time Rendering (SSG)**:
    - During the build process (`npm run build`), Astro executes the code in `src/pages/index.astro`.
-   - A `fetch` request retrieves the processed data from `elo_rankings.json` (hosted on GitHub).
+   - A `fetch` request retrieves the processed data from `elo_rankings.json` (stored within the project's public folder).
    - A static HTML file is generated containing the pre-rendered ranking data, heavily improving SEO and eliminating "Loading" states.
 
 2. **Islands Architecture**:
@@ -28,7 +28,7 @@ The frontend uses a **Static Site Generation (SSG)** model with **Partial Hydrat
    - We use the `client:load` directive so Astro only downloads the essential React JavaScript for those specific components, keeping the rest of the page as lightweight HTML.
 
 3. **Data Flow**:
-   - **Backend (Python)**: Executes the nightly scraping and generates the rankings JSON.
+   - **Backend (Python)**: Executes the weekly scraping (Wednesdays) and generates the rankings JSON.
    - **GitHub Actions**: Commits and pushes the JSON back to the repository.
    - **Vercel Build**: Detects the changes, triggers the Astro build, consumes the updated JSON, and deploys the new static version of the site.
 

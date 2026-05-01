@@ -9,7 +9,7 @@ MiniFootballLeagueAnalyzer es una herramienta avanzada de análisis de datos de 
 
 Extráe información de las competiciones mediante web scraping y provee infografías útiles que permiten a los equipos estudiar a sus rivales, así como conocer sus propias fortalezas y debilidades.
 
-Las infografías y rankings se actualizan **semanalmente (los miércoles)**.
+Las infografías y rankings se actualizan **semanalmente (los miércoles a las 02:00 UTC)** de forma automatizada.
 
 La web cuenta con un menú desplegable para seleccionar la competición deseada. Cada competición incluye:
 
@@ -43,6 +43,8 @@ La web también dispone de un comparador cara a cara (H2H) al seleccionar dos eq
 - **Tabla de cuotas**: Resultados más probables, porcentajes y Goles Esperados (xG).
 
 ![Tabla_cuotas](/images/odds_table.png)
+![Goleadores](/images/scorers.png)
+
 
 - **Evolución ELO**: Gráfica con la progresión de ELO de ambos equipos desde el comienzo de la liga.
 
@@ -121,19 +123,23 @@ El proyecto utiliza **pytest** para asegurar la integridad de la lógica del sis
 graph TD
     A[Minifootballleagues.com] -->|Scraping: Selenium + BS4| B(league_scraping.py)
     B -->|Datos Raw| C[(jsons/*.json)]
+    C --> S(sync_logos.py)
+    S -->|Logos & Avatares Locales| E[(frontend/public/images/*)]
     C --> D(simulacion_final.py)
-    D -->|ELO Ranking & Stats| E[(frontend/public/*.json)]
+    D -->|ELO Ranking & Stats| F[(frontend/public/*.json)]
     
     subgraph GitHub_Actions [GitHub Actions - Miércoles 02:00 UTC]
         B
+        S
         D
-        F[Git Commit & Push]
+        G[Git Commit & Push]
     end
     
-    E --> F
-    F -->|Trigger| G[Vercel Deployment]
-    G -->|Astro SSG Build| H[Web Frontend]
-    H -->|Visualización| I[Usuario Final]
+    F --> G
+    E --> G
+    G -->|Trigger| H[Vercel Deployment]
+    H -->|Astro SSG Build| I[Web Frontend]
+    I -->|Visualización| J[Usuario Final]
 ```
 
 ### Backend
@@ -148,9 +154,7 @@ Está basado en el sistema ELO tradicional, pero incorpora 2 multiplicadores ana
 
 Los JSONs raw (en crudo) son procesados por el algoritmo para exportar un ranking global en el archivo final `elo_rankings.json`.
 
-![Goleadores](/images/scorers.png)
-
 ### Automatización
-Todo el ciclo de recolección de datos y actualización de rankings está automatizado y se ejecuta semanalmente (los miércoles) mediante CI/CD con **GitHub Actions**.
+Todo el ciclo de recolección de datos, descarga de imágenes y actualización de rankings está automatizado y se ejecuta semanalmente (los miércoles a las 02:00 UTC) mediante CI/CD con **GitHub Actions**.
 
 

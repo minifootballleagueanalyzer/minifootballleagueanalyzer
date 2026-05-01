@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useStore } from '@nanostores/react';
 import { userStore } from '../../stores/authStore';
 import { favoritesStore, toggleFavorite } from '../../stores/favoritesStore';
@@ -9,6 +9,17 @@ const FavoritesDashboard = () => {
   const [isOpen, setIsOpen] = useState(false);
   const user = useStore(userStore);
   const favorites = useStore(favoritesStore);
+
+  // Cerrar modal con la tecla Esc
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === 'Escape') setIsOpen(false);
+    };
+    if (isOpen) {
+      globalThis.addEventListener('keydown', handleEsc);
+    }
+    return () => globalThis.removeEventListener('keydown', handleEsc);
+  }, [isOpen]);
 
   if (!user) return null;
 
@@ -24,8 +35,14 @@ const FavoritesDashboard = () => {
       </button>
 
       {isOpen && (
-        <div className="favorites-modal-overlay" onClick={() => setIsOpen(false)}>
-          <div className="favorites-modal" onClick={e => e.stopPropagation()}>
+        <button 
+          className="favorites-modal-overlay" 
+          onClick={(e) => {
+            if (e.target === e.currentTarget) setIsOpen(false);
+          }}
+          aria-label="Cerrar modal"
+        >
+          <div className="favorites-modal">
             <div className="favorites-modal-header">
               <h2>Mis Favoritos</h2>
               <button className="favorites-modal-close" onClick={() => setIsOpen(false)}>
@@ -38,8 +55,8 @@ const FavoritesDashboard = () => {
                 <p className="favorites-empty">Aún no tienes equipos favoritos. Selecciona una liga y pulsa en la estrella de un equipo para añadirlo.</p>
               ) : (
                 <ul className="favorites-list">
-                  {favorites.map((fav, index) => (
-                    <li key={index} className="favorite-item">
+                  {favorites.map((fav) => (
+                    <li key={`${fav.team_name}-${fav.league_id}`} className="favorite-item">
                       <div className="favorite-team-info">
                         <Star size={18} fill="#eab308" stroke="#eab308" />
                         <span className="favorite-team-name">{fav.team_name}</span>
@@ -57,7 +74,7 @@ const FavoritesDashboard = () => {
               )}
             </div>
           </div>
-        </div>
+        </button>
       )}
     </div>
   );

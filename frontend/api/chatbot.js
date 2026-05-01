@@ -83,8 +83,19 @@ function isAllowedQuestion(question) {
 
 // ── Handler principal ─────────────────────────────────────────────────────
 export default async function handler(req, res) {
-  // CORS
-  res.setHeader("Access-Control-Allow-Origin", "*");
+
+  // CORS — restricted to own domain only
+  const allowedOrigins = [
+    "https://minifootballleagueanalyzer.vercel.app",
+    "http://localhost:4321",
+    "http://localhost:3000",
+  ];
+
+  const origin = req.headers.origin || "";
+
+  if (allowedOrigins.includes(origin)) {
+    res.setHeader("Access-Control-Allow-Origin", origin);
+  }
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
@@ -100,6 +111,11 @@ export default async function handler(req, res) {
 
   if (!question || typeof question !== "string" || question.trim().length === 0) {
     return res.status(400).json({ error: "Debes enviar el campo 'question' con tu pregunta." });
+  }
+
+  // Prevent oversized inputs (prevents prompt injection/cost abuse)
+  if (question.length > 500) {
+    return res.status(400).json({ error: "La pregunta no puede superar los 500 caracteres." });
   }
 
   if (!isAllowedQuestion(question)) {
@@ -170,7 +186,8 @@ ${eloContext}${contextInstruction}
     const answer = result.response.text();
     return res.status(200).json({ answer });
   } catch (err) {
-    console.error("Error llamando a Gemini:", err);
+    // Log only the message to avoid leaking internal error details to logs
+    console.error("Error llamando a Gemini:", err instanceof Error ? err.message : "Unknown error");
     return res.status(500).json({
       error: "Error al consultar la IA. Inténtalo de nuevo más tarde.",
     });

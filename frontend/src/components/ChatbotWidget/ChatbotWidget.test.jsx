@@ -4,7 +4,7 @@ import { describe, it, expect, vi, beforeEach } from 'vitest';
 import ChatbotWidget from './ChatbotWidget';
 
 // Mock de fetch global
-global.fetch = vi.fn();
+globalThis.fetch = vi.fn();
 
 describe('ChatbotWidget Component', () => {
   beforeEach(() => {

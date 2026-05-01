@@ -9,7 +9,7 @@ MiniFootballLeagueAnalyzer is an advanced data analytics tool designed for the M
 
 It extracts competition data using web scraping and provides useful infographics, allowing teams to scout their opponents and understand their own strengths and weaknesses.
 
-These infographics are updated on a weekly basis (every Wednesday).
+These infographics are updated on a weekly basis (every Wednesday at 02:00 UTC).
 
 The website features a dropdown menu to select the desired competition. Each competition includes:
 
@@ -43,6 +43,7 @@ The platform also includes a dropdown menu to select two teams within each compe
 - **Odds Table**: Most probable outcomes, percentages, and Expected Goals (xG).
 
 ![Odds_table](/images/odds_table.png)
+![Goleadores](/images/scorers.png)
 
 - **ELO Evolution**: A chart tracking the ELO progression of both teams since the beginning of the league.
 
@@ -116,19 +117,23 @@ The project uses **pytest** to ensure the integrity of the ELO system logic and 
 graph TD
     A[Minifootballleagues.com] -->|Scraping: Selenium + BS4| B(league_scraping.py)
     B -->|Raw Data| C[(jsons/*.json)]
+    C --> S(sync_logos.py)
+    S -->|Local Logos & Avatars| E[(frontend/public/images/*)]
     C --> D(simulacion_final.py)
-    D -->|ELO Ranking & Stats| E[(frontend/public/*.json)]
+    D -->|ELO Ranking & Stats| F[(frontend/public/*.json)]
     
     subgraph GitHub_Actions [GitHub Actions - Wed 02:00 UTC]
         B
+        S
         D
-        F[Git Commit & Push]
+        G[Git Commit & Push]
     end
     
-    E --> F
-    F -->|Trigger| G[Vercel Deployment]
-    G -->|Astro SSG Build| H[Web Frontend]
-    H -->|Visualization| I[End User]
+    F --> G
+    E --> G
+    G -->|Trigger| H[Vercel Deployment]
+    H -->|Astro SSG Build| I[Web Frontend]
+    I -->|Visualization| J[End User]
 ```
 
 ### Backend
@@ -143,13 +148,11 @@ Based on the traditional ELO system, but incorporates 2 analytical multipliers:
 
 The raw JSON files are fed into the algorithm, which outputs a global ranking in a new JSON file (`elo_rankings.json`).
 
-![Scorers](/images/scorers.png)
-
 ### Head-to-Head (H2H)
 Detailed comparison providing statistical insights to anticipate match outcomes.
 
 ### Automation
-Data is updated weekly (every Wednesday) via CI/CD pipelines using GitHub Actions.
+Data, images, and rankings are updated weekly (every Wednesday at 02:00 UTC) via CI/CD pipelines using GitHub Actions.
 
 ### AI Chatbot
 An AI chatbot powered by the Gemini family models to query information about teams and competitions. It can be accessed via a button in the bottom right corner of the website.

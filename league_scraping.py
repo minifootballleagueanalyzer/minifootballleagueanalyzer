@@ -43,9 +43,9 @@ competiciones = [
 
 # Comienzo a iterar por cada competición (diccionario) de mi lista
 for comp in competiciones:
-    print(f"\n")
+    print("\n")
     print(f"Iniciando scraping de {comp['nombre']}...")
-    print(f"========================================")
+    print("========================================")
 
     # Preparo una lista vacía donde iré guardando cada partido que encuentre.
     todos_los_partidos = []

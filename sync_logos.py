@@ -110,7 +110,7 @@ def get_image_urls(obj):
     if isinstance(obj, dict): # Si el objeto es un diccionario
 
         # Recorremos las claves y valores del diccionario
-        for k, v in list(obj.items()): # Usamos el método 'list()' para poder modificar el dict durante la iteración
+        for k, v in obj.items(): # Recorremos las claves y valores del diccionario
 
             # Si la clave (k) es una de las que nos interesan ('logo', 'escudo_local', 'escudo_visitante' o 'avatar') 
             # Y (AND lógico)
@@ -193,9 +193,8 @@ if __name__ == "__main__":
                 for _, _, url in get_image_urls(data): # Para cada URL
                     all_urls.add(url) # Añadimos la URL al conjunto
 
-        except Exception: # Si hay algún error al procesar el archivo
+        except Exception as e: # Si hay algún error al procesar el archivo
             print(f"\nError procesando el JSON {path}: {e}") # Imprimimos el error
-            pass
             
     total_images = len(all_urls) # Total de imágenes únicas 
 

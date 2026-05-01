@@ -15,7 +15,7 @@ equipos_top4 = ["C.D Tocapelotas", "Afed Fc", "Riomar Fc", "Los Gallos Fc"]
 
 # Diccionarios para llevar los puntos actuales y el historial de cada jornada
 # Todos empiezan con 0 puntos en la Jornada 0
-puntos_actuales = {equipo: 0 for equipo in equipos_top4}
+puntos_actuales = dict.fromkeys(equipos_top4, 0)
 historial_puntos = {equipo: [0] for equipo in equipos_top4}
 
 # --- 2. CALCULAR PUNTOS JORNADA A JORNADA ---

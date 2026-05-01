@@ -28,7 +28,7 @@ El frontend utiliza un modelo de **Generación de Sitios Estáticos (SSG)** con 
     - Utilizamos la directiva `client:load` para que Astro únicamente descargue e hidrate el JavaScript de React estrictamente necesario para dichos componentes, manteniendo el resto de la interfaz como un HTML ultra-ligero.
 
 3.  **Flujo de Datos Automatizado**:
-    - **Backend (Python)**: Realiza el scraping nocturno y genera el JSON actualizado de rankings.
+    - **Backend (Python)**: Realiza el scraping semanal (los miércoles) y genera el JSON actualizado de rankings.
     - **GitHub Actions**: Hace commit y push automático del JSON al repositorio.
     - **Vercel Build**: Detecta el nuevo commit en el repositorio, lanza el build de Astro (que consume los últimos datos JSON) y despliega la nueva versión completamente estática.
 
