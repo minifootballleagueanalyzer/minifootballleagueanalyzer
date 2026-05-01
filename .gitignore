@@ -43,6 +43,11 @@ pnpm-debug.log*
 logs/agent.log
 skills-lock.json
 
+# --- SONARQUBE ---
+*sonar*
+.scanner_lock
+report-task.txt
+
 # --- TESTSPRITE ---
 .testsprite/
 testsprite_tests/

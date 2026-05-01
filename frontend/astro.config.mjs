@@ -20,16 +20,6 @@ export default defineConfig({
       // Activo la minificación del CSS
       cssMinify: true,
       rollupOptions: {
-        output: {
-          // Separo las dependencias grandes en chunks independientes para mejorar el caching
-          manualChunks: {
-            'react-vendor': ['react', 'react-dom'],
-            'framer': ['framer-motion'],
-            'charts': ['chart.js', 'react-chartjs-2'],
-            'supabase': ['@supabase/supabase-js'],
-            'map-vendor': ['mapbox-gl', 'react-map-gl'],
-          },
-        },
       },
     },
   },

@@ -50,15 +50,15 @@ describe('MatrixChart Component (Poisson)', () => {
 
   it('calculates global win/draw/loss percentages that sum ~100%', () => {
     const { container } = render(<MatrixChart {...defaultProps} />);
-    
+
     // Buscar los porcentajes en los paneles laterales (panel-prob)
     const panelProbs = Array.from(container.querySelectorAll('.panel-prob'))
-      .map(el => parseFloat(el.textContent.replace('%', '')));
-    
+      .map(el => Number.parseFloat(el.textContent.replace('%', '')));
+
     // Debe haber exactamente 3 (1, X, 2)
     expect(panelProbs).toHaveLength(3);
     const sum = panelProbs.reduce((a, b) => a + b, 0);
-    
+
     expect(sum).toBeGreaterThan(99);
     expect(sum).toBeLessThan(101);
   });

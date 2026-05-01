@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
 
 // Mock de Nanostores antes de importar el componente para evitar efectos secundarios
@@ -11,9 +11,9 @@ vi.mock('@nanostores/react', () => ({
 
 // Mock de la tienda de favoritos directamente para evitar inicializar Supabase
 vi.mock('../../stores/favoritesStore', () => ({
-  favoritesStore: { get: () => [], listen: () => () => {} },
+  favoritesStore: { get: () => [], listen: () => () => { } },
   toggleFavorite: vi.fn(),
-  isFavoritesLoading: { get: () => false, listen: () => () => {} }
+  isFavoritesLoading: { get: () => false, listen: () => () => { } }
 }));
 
 import Leaderboard from './Leaderboard';
@@ -29,9 +29,9 @@ describe('Leaderboard Component', () => {
       { equipo: 'Real Murcia', posicion: 1, puntos: 100, posicion_real: 1, puntos_reales: 100 },
       { equipo: 'Granada B', posicion: 2, puntos: 90, posicion_real: 2, puntos_reales: 90 },
     ];
-    
+
     render(<Leaderboard rankings={mockRankings} leagueId="murcia_1" />);
-    
+
     expect(screen.getByText('Real Murcia')).toBeInTheDocument();
     expect(screen.getByText('Granada B')).toBeInTheDocument();
   });
@@ -40,9 +40,9 @@ describe('Leaderboard Component', () => {
     const mockRankings = [
       { equipo: 'Team A', posicion: 1, puntos: 2500, posicion_real: 1, puntos_reales: 15 },
     ];
-    
+
     render(<Leaderboard rankings={mockRankings} leagueId="league_a" />);
-    
+
     expect(screen.getByText('2500')).toBeInTheDocument();
     expect(screen.getByText('15')).toBeInTheDocument();
   });
