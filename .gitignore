@@ -60,4 +60,7 @@ Thumbs.db
 # --- OTROS ---
 .agents-bak/
 scratch/
-# .planning/  <-- Removed to allow GSD commits
+
+# GSD AI Skill
+.planning/ 
+
