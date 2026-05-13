@@ -412,5 +412,23 @@
         "escudo_visitante": "/images/teams/8e8ffdddc6fb20de03f043bd69a31320.jpg",
         "goles_local": 3,
         "goles_visitante": 4
+    },
+    {
+        "jornada": 14,
+        "equipo_local": "Atlético La Zubia",
+        "escudo_local": "/images/teams/f4712bb148ff0fa5899a9a6ca2affa8e.jpg",
+        "equipo_visitante": "Otura",
+        "escudo_visitante": "/images/teams/df9b1ba766388066146d8e9045970673.jpg",
+        "goles_local": 3,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 14,
+        "equipo_local": "Churriana",
+        "escudo_local": "/images/teams/23871283e20d7d8cc0d7ea7212e3b3c3.jpg",
+        "equipo_visitante": "Monachil",
+        "escudo_visitante": "/images/teams/c12cc8da728366201f567281aa2eb2c6.png",
+        "goles_local": 3,
+        "goles_visitante": 3
     }
 ]

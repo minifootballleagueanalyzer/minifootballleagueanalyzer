@@ -18,6 +18,12 @@
         "avatar": "/images/players/dac403002ae8c7c22f1f3ba52e65690a.png"
     },
     {
+        "nombre": "Manuel Sánchez Fernández",
+        "equipo": "Monachil",
+        "goles": 10,
+        "avatar": "/images/players/67d529177d29e0b56ab95e9e0babfd3d.jpg"
+    },
+    {
         "nombre": "** Fernando Fernández Espínola",
         "equipo": "Atlético La Zubia",
         "goles": 9,
@@ -28,12 +34,6 @@
         "equipo": "Celtic Pulianas",
         "goles": 8,
         "avatar": "/images/players/969739f7042d36be40b09d617421bac2.png"
-    },
-    {
-        "nombre": "Manuel Sánchez Fernández",
-        "equipo": "Monachil",
-        "goles": 8,
-        "avatar": "/images/players/67d529177d29e0b56ab95e9e0babfd3d.jpg"
     },
     {
         "nombre": "Moisés  Gómez Moreno",
@@ -52,6 +52,12 @@
         "equipo": "Monachil",
         "goles": 6,
         "avatar": "/images/players/180cc9339eeefe8d659175f2c6ded282.png"
+    },
+    {
+        "nombre": "Angel Molinero Rivas",
+        "equipo": "Churriana",
+        "goles": 6,
+        "avatar": "/images/players/db75b0af2664aa97084aded477376eb9.png"
     },
     {
         "nombre": "José Prieto Peralta",
@@ -78,12 +84,6 @@
         "avatar": "/images/players/0c9ce41cfaccad2f8dca5d853b75fd0c.png"
     },
     {
-        "nombre": "Alfredo Quedada Izquierdo",
-        "equipo": "Churriana",
-        "goles": 5,
-        "avatar": "/images/players/390e24d22fdfa29903965d724284e41e.jpg"
-    },
-    {
         "nombre": "Manuel Pérez Malagón",
         "equipo": "Peña Fútbol Villanueva Mesia",
         "goles": 5,
@@ -94,6 +94,12 @@
         "equipo": "Atlético La Zubia",
         "goles": 5,
         "avatar": "/images/players/11b4b6bfe7e88bf4c798fe04e288a43b.jpg"
+    },
+    {
+        "nombre": "Alfredo Quedada Izquierdo",
+        "equipo": "Churriana",
+        "goles": 5,
+        "avatar": "/images/players/390e24d22fdfa29903965d724284e41e.jpg"
     },
     {
         "nombre": "** Javier  Tallon Jimenez",
@@ -120,10 +126,10 @@
         "avatar": "/images/players/dd732c963e21b1e837f885f0b056ecde.jpg"
     },
     {
-        "nombre": "Angel Molinero Rivas",
+        "nombre": "Ángel  Martín Navarro",
         "equipo": "Churriana",
         "goles": 4,
-        "avatar": "/images/players/db75b0af2664aa97084aded477376eb9.png"
+        "avatar": "/images/players/31231a2116abab1969c02e21c1ebe7ea.jpg"
     },
     {
         "nombre": "Manuel Cuadros Roldán",
@@ -168,12 +174,6 @@
         "avatar": "/images/players/126d031353e821ff3de86913531fc02e.jpg"
     },
     {
-        "nombre": "Ángel  Martín Navarro",
-        "equipo": "Churriana",
-        "goles": 3,
-        "avatar": "/images/players/31231a2116abab1969c02e21c1ebe7ea.jpg"
-    },
-    {
         "nombre": "Francisco Jesús  Huertas Pérez",
         "equipo": "Monachil",
         "goles": 3,
@@ -190,12 +190,6 @@
         "equipo": "Joanfran Albolote",
         "goles": 3,
         "avatar": "/images/players/f0128f21a6d4f8f3c1136baabf9e4156.jpg"
-    },
-    {
-        "nombre": "Dani Garcia Jiménez",
-        "equipo": "Monachil",
-        "goles": 3,
-        "avatar": "/images/players/20661e2fe6d07175865313497a51a329.jpg"
     },
     {
         "nombre": "Isidro Piteño Domínguez",
@@ -220,6 +214,12 @@
         "equipo": "Peña Fútbol Villanueva Mesia",
         "goles": 3,
         "avatar": "/images/players/4859d024215657481e78e109c32f31b9.jpg"
+    },
+    {
+        "nombre": "Dani Garcia Jiménez",
+        "equipo": "Monachil",
+        "goles": 3,
+        "avatar": "/images/players/20661e2fe6d07175865313497a51a329.jpg"
     },
     {
         "nombre": "Jorge Romero Rodríguez",
@@ -312,16 +312,16 @@
         "avatar": "/images/players/969739f7042d36be40b09d617421bac2.png"
     },
     {
-        "nombre": "Raúl Salvago García",
-        "equipo": "Churriana",
-        "goles": 2,
-        "avatar": "/images/players/180cc9339eeefe8d659175f2c6ded282.png"
-    },
-    {
         "nombre": "Antonio Raúl  Tojar Gordo",
         "equipo": "Joanfran Albolote",
         "goles": 2,
         "avatar": "/images/players/e48a588fa2f44e1f0caa64f291f14684.png"
+    },
+    {
+        "nombre": "Raúl Salvago García",
+        "equipo": "Churriana",
+        "goles": 2,
+        "avatar": "/images/players/180cc9339eeefe8d659175f2c6ded282.png"
     },
     {
         "nombre": "Francisco José Martínez Sánchez",
@@ -342,16 +342,16 @@
         "avatar": "/images/players/af5c9f9f56250b482368aa83e61d117f.jpg"
     },
     {
-        "nombre": "Mario Calvo Amador",
-        "equipo": "Monachil",
-        "goles": 1,
-        "avatar": "/images/players/dac403002ae8c7c22f1f3ba52e65690a.png"
-    },
-    {
         "nombre": "** Jose Aragon Poley",
         "equipo": "Monachil",
         "goles": 1,
         "avatar": "/images/players/e48a588fa2f44e1f0caa64f291f14684.png"
+    },
+    {
+        "nombre": "Mario Calvo Amador",
+        "equipo": "Monachil",
+        "goles": 1,
+        "avatar": "/images/players/dac403002ae8c7c22f1f3ba52e65690a.png"
     },
     {
         "nombre": "** José Manuel  Aguilera Molina",
@@ -438,12 +438,6 @@
         "avatar": "/images/players/c108c3ea914aa8d41d7628ee4db3f617.png"
     },
     {
-        "nombre": "Antonio Morente Valero",
-        "equipo": "Churriana",
-        "goles": 1,
-        "avatar": "/images/players/180cc9339eeefe8d659175f2c6ded282.png"
-    },
-    {
         "nombre": "** Sergio Guerrero de la Camara",
         "equipo": "Celtic Pulianas",
         "goles": 1,
@@ -462,10 +456,10 @@
         "avatar": "/images/players/dbd18390cda2868625b403ccb1920e53.png"
     },
     {
-        "nombre": "** Miguel Angel Fajardo Aguado",
-        "equipo": "Monachil",
+        "nombre": "Antonio Morente Valero",
+        "equipo": "Churriana",
         "goles": 1,
-        "avatar": "/images/players/e39f1c8539ffdbc2d9857d432fb1d622.jpg"
+        "avatar": "/images/players/180cc9339eeefe8d659175f2c6ded282.png"
     },
     {
         "nombre": "Jose Antonio Diaz Muñoz",
@@ -474,10 +468,10 @@
         "avatar": "/images/players/710f2ddbbc1825ec66914ab21c0ad47e.jpg"
     },
     {
-        "nombre": "Juan Gallego Martín",
+        "nombre": "** Miguel Angel Fajardo Aguado",
         "equipo": "Monachil",
         "goles": 1,
-        "avatar": "/images/players/bde4ed2a41cba62b582d75203659df67.jpg"
+        "avatar": "/images/players/e39f1c8539ffdbc2d9857d432fb1d622.jpg"
     },
     {
         "nombre": "José Francisco Quesada García",
@@ -492,10 +486,10 @@
         "avatar": "/images/players/5df680620da37612493d0b8e8e75cd96.jpg"
     },
     {
-        "nombre": "Jesus  Vargas Dali",
+        "nombre": "Juan Gallego Martín",
         "equipo": "Monachil",
         "goles": 1,
-        "avatar": "/images/players/b102c51344fecabaa62fb16c74a9901a.jpg"
+        "avatar": "/images/players/bde4ed2a41cba62b582d75203659df67.jpg"
     },
     {
         "nombre": "Juan de Dios Aguilera Sánchez",
@@ -508,6 +502,18 @@
         "equipo": "Celtic Pulianas",
         "goles": 1,
         "avatar": "/images/players/180cc9339eeefe8d659175f2c6ded282.png"
+    },
+    {
+        "nombre": "Manuel Jiménez Ruiz de Valdivia",
+        "equipo": "Monachil",
+        "goles": 1,
+        "avatar": "/images/players/180cc9339eeefe8d659175f2c6ded282.png"
+    },
+    {
+        "nombre": "Jesus  Vargas Dali",
+        "equipo": "Monachil",
+        "goles": 1,
+        "avatar": "/images/players/b102c51344fecabaa62fb16c74a9901a.jpg"
     },
     {
         "nombre": "Jose Antonio \"Ñoño\" Jiménez Muñoz",
